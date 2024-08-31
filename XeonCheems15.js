@@ -466,7 +466,7 @@ XeonBotInc.sendMessage(m.chat,
 			            participant: m.key.participant
 			        }
 			    })
-XeonBotInc.sendMessage(m.chat, {text:`\`\`\`「 Promotion Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a promotion message and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+XeonBotInc.sendMessage(m.chat, {text:`\`\`\`  Promotion Detected  \`\`\`\n\n@${m.sender.split("@")[0]} has sent a promotion message and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 }
 }
 
@@ -483,7 +483,7 @@ XeonBotInc.sendMessage(m.chat, {text:`\`\`\`「 Promotion Detected 」\`\`\`\n\n
 			            participant: m.key.participant
 			        }
 			    })
-			XeonBotInc.sendMessage(m.chat, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} was using harsh words and his chat has been deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			XeonBotInc.sendMessage(m.chat, {text:`\`\`\`  Bad Word Detected  \`\`\`\n\n@${m.sender.split("@")[0]} was using harsh words and his chat has been deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
                }
             }
         }
@@ -506,7 +506,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         if (db.groups[m.chat].antimedia && isMedia) {
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Media Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-media for this group`)
+          replygcxeon(`\`\`\`  Media Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-media for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
   }
@@ -514,7 +514,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "imageMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Image Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-image for this group`)
+          replygcxeon(`\`\`\`  Image Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-image for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -523,7 +523,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "videoMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Video Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-video for this group`)
+          replygcxeon(`\`\`\`  Video Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-video for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -532,7 +532,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "stickerMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Sticker Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-sticker for this group`)
+          replygcxeon(`\`\`\`  Sticker Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-sticker for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -541,7 +541,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "audioMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Audio Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-audio for this group`)
+          replygcxeon(`\`\`\`  Audio Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-audio for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -550,7 +550,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "pollCreationMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Poll Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-poll for this group`)
+          replygcxeon(`\`\`\`  Poll Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-poll for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -559,7 +559,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "locationMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Location Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-location for this group`)
+          replygcxeon(`\`\`\`  Location Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-location for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -568,7 +568,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "documentMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Document Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-document for this group`)
+          replygcxeon(`\`\`\`  Document Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-document for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -577,7 +577,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     if(isXeonMedia === "contactMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
-          replygcxeon(`\`\`\`「 Contact Detected 」\`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-contact for this group`)
+          replygcxeon(`\`\`\`  Contact Detected  \`\`\`\n\nSorry, but I have to delete it, because the admin/owner has activated anti-contact for this group`)
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
     }
@@ -585,7 +585,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
   
         if (db.groups[m.chat].antilink) {
             if (budy.match('http') && budy.match('https')) {
-               bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to send any link😇`
+               bvl = `\`\`\`  Link Detected  \`\`\`\n\nAdmin has sent a link, admin is free to send any link😇`
 if (m.isAdmin) return replygcxeon(bvl)
 if (m.key.fromMe) return replygcxeon(bvl)
 if (XeonTheCreator) return replygcxeon(bvl)
@@ -598,7 +598,7 @@ if (XeonTheCreator) return replygcxeon(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			XeonBotInc.sendMessage(m.chat, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			XeonBotInc.sendMessage(m.chat, {text:`\`\`\`  Link Detected  \`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
             }
         }
         
@@ -1828,9 +1828,9 @@ break
         `Follow Developer On GitHub`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://github.com/GlobalTechInfo', // Command (URL in this case)
+        'https://github.com/Zeus30007', // Command (URL in this case)
         'cta_url', // Button type
-        'https://github.com/GlobalTechInfo' // URL (used in image generation)
+        'https://github.com/lluxxy4' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/264px-Instagram_logo_2016.svg.png', // Image URL
@@ -1838,9 +1838,9 @@ break
         `Follow Developer On Instagram`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://www.instagram.com/unicorn_xeon13', // Command (URL in this case)
+        'https://www.instagram.com/mythic.shadow69', // Command (URL in this case)
         'cta_url', // Button type
-        'https://www.instagram.com/unicorn_xeon13' // URL (used in image generation)
+        'https://www.instagram.com/mythic.shadow69' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png', // Image URL
@@ -1848,9 +1848,9 @@ break
         `Contact Developer On WhatsApp`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK', // Command (URL in this case)
+        'https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ', // Command (URL in this case)
         'cta_url', // Button type
-        'https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK' // URL (used in image generation)
+        'https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ' // URL (used in image generation)
     ], 
 ];
 
@@ -2215,11 +2215,11 @@ break
 case 'store':
 case 'shop': 
 case 'list': {
-let teks = '┌──⭓「 *LIST STORE* 」\n│\n'
+let teks = '┌──⭓  *LIST STORE*  \n╋━\n'
 for (let x of db_respon_list) {
-teks += `│⭔ ${x.key}\n`
+teks += `╋━⭔ ${x.key}\n`
 }
-teks += `│\n└────────────⭓\n\n`
+teks += `╋━\n└────────────⭓\n\n`
 replygcxeon(teks)
 }
 break
@@ -8905,7 +8905,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
     break
     case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 let me = m.sender
-let teks = `*「  ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://telegra.ph/file/f6119ab1993a2d875843a.jpg`
+let teks = `*   ${global.botname} Script  *\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://telegra.ph/file/f6119ab1993a2d875843a.jpg`
 sendXeonBotIncMessage(m.chat, { 
 text: teks,
 mentions:[sender],
@@ -9050,8 +9050,8 @@ break
 	  if (!text) return replygcxeon(`Username? `)
   let res = await fg.ttStalk(args[0])
   let txt = `
-┌──「 *TIKTOK STALK* 
-──「 *TIKTOK STALK* 
+┌──  *TIKTOK STALK* 
+──  *TIKTOK STALK* 
 ▢ *🔖Number:* ${res.name}
 ▢ *🔖Username:* ${res.username}
 ▢ *👥followers:* ${res.followers}
@@ -10428,7 +10428,7 @@ break
                 if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext dgxeon`)
                 quere = args.join(" ")
                 flipe = quere.split('').reverse().join('')
-                replygcxeon(`\`\`\`「 FLIP TEXT 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
+                replygcxeon(`\`\`\`  FLIP TEXT  \`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
             }
             break
 			case 'style': case 'styletext': {
@@ -11474,11 +11474,11 @@ break
                replygcxeon('Successfully Deleted Bad Word!')
             break 
             case 'listbadword':{
-let teks = '┌──⭓「 *VN List* 」\n│\n'
+let teks = '┌──⭓  *VN List*  \n╋━\n'
 for (let x of bad) {
-teks += `│⭔ ${x}\n`
+teks += `╋━⭔ ${x}\n`
 }
-teks += `│\n└────────────⭓\n\n*Totally there are : ${bad.length}*`
+teks += `╋━\n└────────────⭓\n\n*Totally there are : ${bad.length}*`
 replygcxeon(teks)
 }
 break
@@ -11668,17 +11668,17 @@ break
 *Reason:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
-├ Total: ${vote[m.chat][1].length}
-│
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][1].length}
+╋━
+╋━ 
 └────
 
 ┌〔 DOWNVOTE 〕
-│ 
-├ Total: ${vote[m.chat][2].length}
-│
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][2].length}
+╋━
+╋━ 
 └────
 
 Please Type Below
@@ -11701,17 +11701,17 @@ Please Type Below
 *Reason:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
-├ Total: ${vote[m.chat][1].length}
-${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][1].length}
+${vote[m.chat][1].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 ┌〔 DOWNVOTE 〕
-│ 
-├ Total: ${vote[m.chat][2].length}
-${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][2].length}
+${vote[m.chat][2].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 Please Type Below
@@ -11734,17 +11734,17 @@ Please Type Below
 *Reason:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
-├ Total: ${vote[m.chat][1].length}
-${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][1].length}
+${vote[m.chat][1].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 ┌〔 DOWNVOTE 〕
-│ 
-├ Total: ${vote[m.chat][2].length}
-${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${vote[m.chat][2].length}
+${vote[m.chat][2].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 Please Type Below
@@ -11763,17 +11763,17 @@ teks_vote = `* VOTE *
 *Reason:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
-├ Total: ${upvote.length}
-${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${upvote.length}
+${vote[m.chat][1].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 ┌〔 DOWNVOTE 〕
-│ 
-├ Total: ${devote.length}
-${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+╋━ 
+⨺ Total: ${devote.length}
+${vote[m.chat][2].map((v, i) => `⨺ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╋━ 
 └────
 
 *${prefix}deletevote* - to delete votes
@@ -13501,11 +13501,11 @@ replygcxeon(`Success deleting video ${q}`)
 }
 break
 case 'listvideo':{
-let teks = '┌──⭓「 *Video List* 」\n│\n'
+let teks = '┌──⭓  *Video List*  \n╋━\n'
 for (let x of VideoXeon) {
-teks += `│${setv} ${x}\n`
+teks += `╋━${setv} ${x}\n`
 }
-teks += `│\n└────────────⭓\n\n*Totally there are : ${VideoXeon.length}*`
+teks += `╋━\n└────────────⭓\n\n*Totally there are : ${VideoXeon.length}*`
 replygcxeon(teks)
 }
 break
@@ -13533,11 +13533,11 @@ replygcxeon(`Success deleting image ${q}`)
 }
 break
 case 'listimage':{
-let teks = '┌──⭓「 *Image List* 」\n│\n'
+let teks = '┌──⭓  *Image List*  \n╋━\n'
 for (let x of ImageXeon) {
-teks += `│${setv} ${x}\n`
+teks += `╋━${setv} ${x}\n`
 }
-teks += `│\n└────────────⭓\n\n*Totally there are : ${ImageXeon.length}*`
+teks += `╋━\n└────────────⭓\n\n*Totally there are : ${ImageXeon.length}*`
 replygcxeon(teks)
 }
 break
@@ -13565,11 +13565,11 @@ replygcxeon(`Success deleting sticker ${q}`)
 }
 break
 case 'liststicker':{
-let teks = '┌──⭓「 *Sticker List* 」\n│\n'
+let teks = '┌──⭓  *Sticker List*  \n╋━\n'
 for (let x of StickerXeon) {
-teks += `│${setv} ${x}\n`
+teks += `╋━${setv} ${x}\n`
 }
-teks += `│\n└────────────⭓\n\n*Totally there are : ${StickerXeon.length}*`
+teks += `╋━\n└────────────⭓\n\n*Totally there are : ${StickerXeon.length}*`
 replygcxeon(teks)
 }
 break
@@ -13597,11 +13597,11 @@ replygcxeon(`Success deleting vn ${q}`)
 }
 break
 case 'listvn':{
-let teks = '┌──⭓「 *VN List* 」\n│\n'
+let teks = '┌──⭓  *VN List*  \n╋━\n'
 for (let x of VoiceNoteXeon) {
-teks += `│${setv} ${x}\n`
+teks += `╋━${setv} ${x}\n`
 }
-teks += `│\n└────────────⭓\n\n*Totally there are : ${VoiceNoteXeon.length}*`
+teks += `╋━\n└────────────⭓\n\n*Totally there are : ${VoiceNoteXeon.length}*`
 replygcxeon(teks)
 }
 break
@@ -13638,11 +13638,11 @@ replygcxeon(`Successfully deleted zip ${teks}`)
 break
 case 'listzip': {
 
-let teksooooo = '┌──⭓「 *ZIP LIST* 」\n│\n'
+let teksooooo = '┌──⭓  *ZIP LIST*  \n╋━\n'
 for (let x of ZipXeon) {
-teksooooo += `│${setv} ${x}\n`
+teksooooo += `╋━${setv} ${x}\n`
 }
-teksooooo += `│\n└────────────⭓\n\n*Total : ${ZipXeon.length}*`
+teksooooo += `╋━\n└────────────⭓\n\n*Total : ${ZipXeon.length}*`
 replygcxeon(teksooooo)
 }
 break
@@ -13679,11 +13679,11 @@ replygcxeon(`Successfully deleted Apk ${teks}`)
 break
 case 'listapk': {
 
-let teksoooooo = '┌──⭓「 *APK LIST* 」\n│\n'
+let teksoooooo = '┌──⭓  *APK LIST*  \n╋━\n'
 for (let x of ApkXeon) {
-teksoooooo += `│${setv} ${x}\n`
+teksoooooo += `╋━${setv} ${x}\n`
 }
-teksoooooo += `│\n└────────────⭓\n\n*Total : ${ApkXeon.length}`
+teksoooooo += `╋━\n└────────────⭓\n\n*Total : ${ApkXeon.length}`
 replygcxeon(teksoooooo)
 }
 break
@@ -13720,11 +13720,11 @@ replygcxeon(`Successfully deleted pdf ${teks}`)
 break
 case 'listpdf': {
 
-let teksoooo = '┌──⭓「 *PDF LIST* 」\n│\n'
+let teksoooo = '┌──⭓  *PDF LIST*  \n╋━\n'
 for (let x of DocXeon) {
-teksoooo += `│${setv} ${x}\n`
+teksoooo += `╋━${setv} ${x}\n`
 }
-teksoooo += `│\n└────────────⭓\n\n*Total : ${DocXeon.length}*`
+teksoooo += `╋━\n└────────────⭓\n\n*Total : ${DocXeon.length}*`
 replygcxeon(teksoooo)
 }
 break
@@ -13762,7 +13762,7 @@ break
 			break
 			case 'listmsg': {
 				let seplit = Object.entries(global.db.database).map(([nama, isi]) => { return { nama, ...isi } })
-				let teks = '「 LIST DATABASE 」\n\n'
+				let teks = '  LIST DATABASE  \n\n'
 				for (let i of seplit) {
 					teks += `${setv} *Name :* ${i.nama}\n${setv} *Type :* ${getContentType(i.message)?.replace(/Message/i, '')}\n────────────────────────\n\n`
 				}
@@ -13789,11 +13789,11 @@ fs.writeFileSync('./src/owner.json', JSON.stringify(owner))
 replygcxeon(`The Numbrr ${ya} Has been deleted from owner list by the owner!!!`)
 break
 case 'listowner': {
-                let teks = '┌──⭓「 *List Owner* 」\n│\n'
+                let teks = '┌──⭓  *List Owner*  \n╋━\n'
                 for (let x of owner) {
-                    teks += `│${setv} ${x}\n`
+                    teks += `╋━${setv} ${x}\n`
                 }
-                teks += `│\n└────────────⭓\n\n*Total : ${owner.length}*`
+                teks += `╋━\n└────────────⭓\n\n*Total : ${owner.length}*`
                 replygcxeon(teks)
             }
             break
@@ -13841,7 +13841,7 @@ if (!args.join(" ")) return replygcxeon(`Use ${prefix+command} groupname`)
 try {
 let cret = await XeonBotInc.groupCreate(args.join(" "), [])
 let response = await XeonBotInc.groupInviteCode(cret.id)
-const teksop = `     「 Create Group 」
+const teksop = `       Create Group  
 
 ▸ Name : ${cret.subject}
 ▸ Owner : @${cret.owner.split("@")[0]}
@@ -15371,7 +15371,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 			break
 			case 'listpr': case 'listprem': case 'listpremium': {
 				if (!XeonTheCreator) return XeonStickOwner()
-				let txt = `*------「 LIST PREMIUM 」------*\n\n`
+				let txt = `*------  LIST PREMIUM  ------*\n\n`
 				for (let userprem of premium) {
 					txt += `➸ *Number*: @${userprem.id.split('@')[0]}\n➸ *Limit*: ${global.db.users[userprem.id].limit}\n➸ *Money*: ${global.db.users[userprem.id].uang.toLocaleString('id-ID')}\n➸ *Expired*: ${formatDate(userprem.expired)}\n\n`
 				}
@@ -16785,10 +16785,10 @@ break
             const a = db.users[sender]
             const me = m.sender
 			const xmenu_oh = `
-──*THE MONSTER*
-${setv} *Hi 👋*
+──*⨺⃝𝚁𝙾𝚂𝙴♱*
+${setv} *GREETINGS*
 ${setv} *${m.pushName}* 
-${setv} *${xeonytimewisher} 🥰* 
+${setv} *${xeonytimewisher} 💣* 
 ─┬────${readmore}
 ─┴ *MIRAN FOX*
 ${setv} ${prefix}allmenu
@@ -16968,19 +16968,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -17018,19 +17018,19 @@ let msg = generateWAMessageFromContent(m.chat, {
                   buttons: [
              {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -17079,7 +17079,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -17170,19 +17170,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -17209,644 +17209,644 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'allmenu': {
 let xmenu_oh = `
- ──「 *THE MONSTER* 」
+ ──  *⨺⃝𝚁𝙾𝚂𝙴♱*  
 ${setv} *GREETINGS*
 ${setv} *${m.pushName}* 
 ${setv} *${xeonytimewisher}* 
  ───── ${readmore}
            *MIRAN FOX*
 ─*OWNER MENU*
-│${setv} ${prefix}addbadword 🅞
-│${setv} ${prefix}delbadword 🅞
-│${setv} ${prefix}autoread 🅞
-│${setv} ${prefix}autobio 🅞
-│${setv} ${prefix}autotype 🅞
-│${setv} ${prefix}unavailable 🅞
-│${setv} ${prefix}autorecord 🅞
-│${setv} ${prefix}autorecordtype 🅞
-│${setv} ${prefix}autoswview 🅞
-│${setv} ${prefix}setautoblock 🅞
-│${setv} ${prefix}setantiforeign 🅞
-│${setv} ${prefix}autoblock 🅞
-│${setv} ${prefix}onlygc 🅞
-│${setv} ${prefix}onlypc 🅞
-│${setv} ${prefix}onlyindia 🅞
-│${setv} ${prefix}onlyindo 🅞
-│${setv} ${prefix}anticall 🅞
-│${setv} ${prefix}self 🅞
-│${setv} ${prefix}public 🅞
-│${setv} ${prefix}join 🅞
-│${setv} ${prefix}poll 🅞
-│${setv} ${prefix}spam 🅞
-│${setv} ${prefix}bc 🅞
-│${setv} ${prefix}bcgroup 🅞
-│${setv} ${prefix}setmenu 🅞
-│${setv} ${prefix}setimgmenu 🅞
-│${setv} ${prefix}setvidmenu 🅞
-│${setv} ${prefix}setgifmenu 🅞
-│${setv} ${prefix}setreply 🅞
-│${setv} ${prefix}resethit 🅞
-│${setv} ${prefix}resetuser 🅞
-│${setv} ${prefix}creategc 🅞
-│${setv} ${prefix}setexif 🅞
-│${setv} ${prefix}getexif 🅞
-│${setv} ${prefix}getautoblocknumber 🅞
-│${setv} ${prefix}getantiforeignnumber 🅞
-│${setv} ${prefix}userjid 🅞
-│${setv} ${prefix}setbotbio 🅞
-│${setv} ${prefix}delppbot 🅞
-│${setv} ${prefix}shutdown 🅞
-│${setv} ${prefix}setppbot 🅞
-│${setv} ${prefix}addprem 🅞
-│${setv} ${prefix}delprem 🅞
-│${setv} ${prefix}addowner 🅞
-│${setv} ${prefix}delowner 🅞
-│${setv} ${prefix}addvn 🅞
-│${setv} ${prefix}addapk 🅞
-│${setv} ${prefix}addzip 🅞
-│${setv} ${prefix}addpdf 🅞
-│${setv} ${prefix}delapk 🅞
-│${setv} ${prefix}delzip 🅞
-│${setv} ${prefix}delpdf 🅞
-│${setv} ${prefix}delvn 🅞
-│${setv} ${prefix}addsticker 🅞
-│${setv} ${prefix}delsticker 🅞
-│${setv} ${prefix}addimage 🅞
-│${setv} ${prefix}delimage 🅞
-│${setv} ${prefix}addvideo 🅞
-│${setv} ${prefix}delvideo 🅞
-│${setv} ${prefix}upswtext 🅞
-│${setv} ${prefix}upswvideo 🅞
-│${setv} ${prefix}upswimage 🅞
-│${setv} ${prefix}upswaudio 🅞
-│${setv} ${prefix}autosticker 🅞
-│${setv} ${prefix}block 🅞
-│${setv} ${prefix}unblock 🅞
-│${setv} ${prefix}leavegc 🅞
-│${setv} ${prefix}pushcontact 🅞
-│${setv} ${prefix}pushcontactv2 🅞
-│${setv} ${prefix}pushcontactv3 🅞
-│${setv} ${prefix}jpm 🅞
-│${setv} ${prefix}checkmember 🅞
-│${setv} ${prefix}post 🅞
-│${setv} ${prefix}clearchat 🅞
-│${setv} ${prefix}setprefix 🅞
-│${setv} $ 🅞
-│${setv} > 🅞
-│${setv} < 🅞
+╋━${setv} ${prefix}addbadword 𓇻‎
+╋━${setv} ${prefix}delbadword 𓇻‎
+╋━${setv} ${prefix}autoread 𓇻‎
+╋━${setv} ${prefix}autobio 𓇻‎
+╋━${setv} ${prefix}autotype 𓇻‎
+╋━${setv} ${prefix}unavailable 𓇻‎
+╋━${setv} ${prefix}autorecord 𓇻‎
+╋━${setv} ${prefix}autorecordtype 𓇻‎
+╋━${setv} ${prefix}autoswview 𓇻‎
+╋━${setv} ${prefix}setautoblock 𓇻‎
+╋━${setv} ${prefix}setantiforeign 𓇻‎
+╋━${setv} ${prefix}autoblock 𓇻‎
+╋━${setv} ${prefix}onlygc 𓇻‎
+╋━${setv} ${prefix}onlypc 𓇻‎
+╋━${setv} ${prefix}onlyindia 𓇻‎
+╋━${setv} ${prefix}onlyindo 𓇻‎
+╋━${setv} ${prefix}anticall 𓇻‎
+╋━${setv} ${prefix}self 𓇻‎
+╋━${setv} ${prefix}public 𓇻‎
+╋━${setv} ${prefix}join 𓇻‎
+╋━${setv} ${prefix}poll 𓇻‎
+╋━${setv} ${prefix}spam 𓇻‎
+╋━${setv} ${prefix}bc 𓇻‎
+╋━${setv} ${prefix}bcgroup 𓇻‎
+╋━${setv} ${prefix}setmenu 𓇻‎
+╋━${setv} ${prefix}setimgmenu 𓇻‎
+╋━${setv} ${prefix}setvidmenu 𓇻‎
+╋━${setv} ${prefix}setgifmenu 𓇻‎
+╋━${setv} ${prefix}setreply 𓇻‎
+╋━${setv} ${prefix}resethit 𓇻‎
+╋━${setv} ${prefix}resetuser 𓇻‎
+╋━${setv} ${prefix}creategc 𓇻‎
+╋━${setv} ${prefix}setexif 𓇻‎
+╋━${setv} ${prefix}getexif 𓇻‎
+╋━${setv} ${prefix}getautoblocknumber 𓇻‎
+╋━${setv} ${prefix}getantiforeignnumber 𓇻‎
+╋━${setv} ${prefix}userjid 𓇻‎
+╋━${setv} ${prefix}setbotbio 𓇻‎
+╋━${setv} ${prefix}delppbot 𓇻‎
+╋━${setv} ${prefix}shutdown 𓇻‎
+╋━${setv} ${prefix}setppbot 𓇻‎
+╋━${setv} ${prefix}addprem 𓇻‎
+╋━${setv} ${prefix}delprem 𓇻‎
+╋━${setv} ${prefix}addowner 𓇻‎
+╋━${setv} ${prefix}delowner 𓇻‎
+╋━${setv} ${prefix}addvn 𓇻‎
+╋━${setv} ${prefix}addapk 𓇻‎
+╋━${setv} ${prefix}addzip 𓇻‎
+╋━${setv} ${prefix}addpdf 𓇻‎
+╋━${setv} ${prefix}delapk 𓇻‎
+╋━${setv} ${prefix}delzip 𓇻‎
+╋━${setv} ${prefix}delpdf 𓇻‎
+╋━${setv} ${prefix}delvn 𓇻‎
+╋━${setv} ${prefix}addsticker 𓇻‎
+╋━${setv} ${prefix}delsticker 𓇻‎
+╋━${setv} ${prefix}addimage 𓇻‎
+╋━${setv} ${prefix}delimage 𓇻‎
+╋━${setv} ${prefix}addvideo 𓇻‎
+╋━${setv} ${prefix}delvideo 𓇻‎
+╋━${setv} ${prefix}upswtext 𓇻‎
+╋━${setv} ${prefix}upswvideo 𓇻‎
+╋━${setv} ${prefix}upswimage 𓇻‎
+╋━${setv} ${prefix}upswaudio 𓇻‎
+╋━${setv} ${prefix}autosticker 𓇻‎
+╋━${setv} ${prefix}block 𓇻‎
+╋━${setv} ${prefix}unblock 𓇻‎
+╋━${setv} ${prefix}leavegc 𓇻‎
+╋━${setv} ${prefix}pushcontact 𓇻‎
+╋━${setv} ${prefix}pushcontactv2 𓇻‎
+╋━${setv} ${prefix}pushcontactv3 𓇻‎
+╋━${setv} ${prefix}jpm 𓇻‎
+╋━${setv} ${prefix}checkmember 𓇻‎
+╋━${setv} ${prefix}post 𓇻‎
+╋━${setv} ${prefix}clearchat 𓇻‎
+╋━${setv} ${prefix}setprefix 𓇻‎
+╋━${setv} $ 𓇻‎
+╋━${setv} > 𓇻‎
+╋━${setv} < 𓇻‎
  ─┬────
  ─┴ *GROUP MENU* 
-│${setv} ${prefix}antibot 🅖
-│${setv} ${prefix}antiviewonce 🅖
-│${setv} ${prefix}readviewonce 🅖
-│${setv} ${prefix}welcome 🅖
-│${setv} ${prefix}adminevent 🅖
-│${setv} ${prefix}groupevent 🅖
-│${setv} ${prefix}antiforeign 🅖
-│${setv} ${prefix}antimedia 🅖
-│${setv} ${prefix}antiaudio 🅖
-│${setv} ${prefix}antivideo 🅖
-│${setv} ${prefix}antiimage 🅖
-│${setv} ${prefix}antidocument 🅖
-│${setv} ${prefix}antilocation 🅖
-│${setv} ${prefix}anticontact 🅖
-│${setv} ${prefix}antisticker 🅖
-│${setv} ${prefix}antipoll 🅖
-│${setv} ${prefix}antilink 🅖
-│${setv} ${prefix}antipromotion 🅖
-│${setv} ${prefix}antivirtex 🅖
-│${setv} ${prefix}grouplink 🅖
-│${setv} ${prefix}listadmin 🅖
-│${setv} ${prefix}invite 🅖
-│${setv} ${prefix}ephemeral 🅖
-│${setv} ${prefix}delete 🅖
-│${setv} ${prefix}setppgroup 🅖
-│${setv} ${prefix}delppgroup 🅖
-│${setv} ${prefix}setnamegc 🅖
-│${setv} ${prefix}setdesc 🅖
-│${setv} ${prefix}add 🅖
-│${setv} ${prefix}kick 🅖
-│${setv} ${prefix}promote 🅖
-│${setv} ${prefix}demote 🅖
-│${setv} ${prefix}kickall 🅖
-│${setv} ${prefix}promoteall 🅖
-│${setv} ${prefix}demoteall 🅖
-│${setv} ${prefix}getcontact 🅞
-│${setv} ${prefix}savecontact 🅞
-│${setv} ${prefix}sendcontact 🅞
-│${setv} ${prefix}contactag 🅞
-│${setv} ${prefix}hidetag 🅖
-│${setv} ${prefix}totag 🅖
-│${setv} ${prefix}tagall 🅖
-│${setv} ${prefix}editinfo 🅖
-│${setv} ${prefix}opentime 🅖
-│${setv} ${prefix}closetime 🅖
-│${setv} ${prefix}resetlink 🅖
-│${setv} ${prefix}getbio 🅖
-│${setv} ${prefix}vote 🅖
-│${setv} ${prefix}upvote 🅖
-│${setv} ${prefix}downvote 🅖
-│${setv} ${prefix}checkvote 🅖
-│${setv} ${prefix}delvote 🅖
-│${setv} ${prefix}antivirus 🅖
-│${setv} ${prefix}antibadword 🅖
-│${setv} ${prefix}nsfw 🅖
-│${setv} ${prefix}react 🅖
-│${setv} ${prefix}getjoinrequest 🅖
-╰─┬────
-╭─┴*SEARCH MENU*
-│${setv} ${prefix}google 🅕
-│${setv} ${prefix}wikipedia 🅕
-│${setv} ${prefix}ytsearch 🅕
-│${setv} ${prefix}xnxxsearch 🅕
-│${setv} ${prefix}xvideosearch 🅕
-│${setv} ${prefix}apksearch 🅕
-│${setv} ${prefix}stickersearch 🅕
-│${setv} ${prefix}imdb 🅕
-│${setv} ${prefix}wanumber 🅕
-│${setv} ${prefix}friend 🅕
-│${setv} ${prefix}lyrics 🅕
-│${setv} ${prefix}pixiv 🅕
-╰─┬────
-╭─┴「 *DOWNLOADS* 」
-│${setv} ${prefix}xnxxdl 🅕
-│${setv} ${prefix}xvideodl 🅕
-│${setv} ${prefix}itunes 🅕
-│${setv} ${prefix}play 🅕
-│${setv} ${prefix}ytmp3 🅕
-│${setv} ${prefix}ytmp4 🅕
-│${setv} ${prefix}tiktok 🅕
-│${setv} ${prefix}tiktokaudio 🅕
-│${setv} ${prefix}tiktokvideo 🅕
-│${setv} ${prefix}igvideo 🅕
-│${setv} ${prefix}igimage 🅕
-│${setv} ${prefix}facebook 🅕
-│${setv} ${prefix}twitter 🅕
-│${setv} ${prefix}apk 🅕
-│${setv} ${prefix}mega 🅕
-│${setv} ${prefix}mediafire 🅕
-│${setv} ${prefix}google 🅕
-│${setv} ${prefix}gimage 🅕
-│${setv} ${prefix}weather 🅕
-│${setv} ${prefix}spotify 🅟
-│${setv} ${prefix}gitclone 🅕
-│${setv} ${prefix}happymod 🅕
-│${setv} ${prefix}gdrive 🅕
-│${setv} ${prefix}pinterest 🅕
-│${setv} ${prefix}ringtone 🅕
-│${setv} ${prefix}autodownload 🅞
-╰─┬────
-╭─┴「 *TOOL MENU* 」
-│${setv} ${prefix}obfuscate 🅕
-│${setv} ${prefix}styletext 🅕
-│${setv} ${prefix}fliptext 🅕
-│${setv} ${prefix}tts 🅕
-│${setv} ${prefix}say 🅕
-│${setv} ${prefix}togif 🅕
-│${setv} ${prefix}toqr 🅕
-│${setv} ${prefix}bass 🅕
-│${setv} ${prefix}blown 🅕
-│${setv} ${prefix}deep 🅕
-│${setv} ${prefix}earrape 🅕
-│${setv} ${prefix}fast 🅕
-│${setv} ${prefix}fat 🅕
-│${setv} ${prefix}nightcore 🅕
-│${setv} ${prefix}reverse 🅕
-│${setv} ${prefix}robot 🅕
-│${setv} ${prefix}slow 🅕
-│${setv} ${prefix}smooth 🅕
-│${setv} ${prefix}squirrel 🅕
-│${setv} ${prefix}tinyurl 🅕
-│${setv} ${prefix}tovn 🅕
-│${setv} ${prefix}t 🅕
-│${setv} ${prefix}toaudio 🅕
-│${setv} ${prefix}tomp3 🅕
-│${setv} ${prefix}tomp4🅕
-│${setv} ${prefix}toimg 🅕
-│${setv} ${prefix}toonce 🅕
-│${setv} ${prefix}toptv 🅕
-│${setv} ${prefix}sticker 🅕
-│${setv} ${prefix}smeme 🅕
-│${setv} ${prefix}smeta 🅕
-│${setv} ${prefix}take 🅟
-│${setv} ${prefix}emojimix 🅕
-│${setv} ${prefix}volaudio 🅕
-│${setv} ${prefix}volvideo 🅕
-│${setv} ${prefix}ebinary 🅕
-│${setv} ${prefix}dbinary 🅕
-│${setv} ${prefix}ssweb 🅕
-│${setv} ${prefix}quoted 🅕
-│${setv} ${prefix}translate 🅕
-│${setv} ${prefix}get 🅕
-│${setv} ${prefix}tourl 🅕
-│${setv} ${prefix}write 🅕
-╰─┬────
-╭─┴「 *LIST MENU* 」
-│${setv} ${prefix}listprem 🅕
-│${setv} ${prefix}listowner 🅕
-│${setv} ${prefix}liststicker 🅕
-│${setv} ${prefix}listimage 🅕
-│${setv} ${prefix}listvideo 🅕
-│${setv} ${prefix}listvn 🅕
-│${setv} ${prefix}listapk 🅕
-│${setv} ${prefix}listzip 🅕
-│${setv} ${prefix}listpdf 🅕
-│${setv} ${prefix}listbadword 🅕
-│${setv} ${prefix}listpc 🅕
-│${setv} ${prefix}listgc 🅕
-╰─┬────
-╭─┴「 *RANDOM PHOTO* 」
-│${setv} ${prefix}aesthetic 🅕
-│${setv} ${prefix}coffee 🅕
-│${setv} ${prefix}wikimedia 🅕
-│${setv} ${prefix}wallpaper 🅕
-│${setv} ${prefix}art 🅕
-│${setv} ${prefix}bts 🅕
-│${setv} ${prefix}dogwoof 🅕
-│${setv} ${prefix}catmeow 🅕
-│${setv} ${prefix}lizardpic 🅕
-│${setv} ${prefix}goosebird 🅕
-│${setv} ${prefix}8ballpool 🅕
-│${setv} ${prefix}cosplay 🅕
-│${setv} ${prefix}hacker 🅕
-│${setv} ${prefix}cyber 🅕
-│${setv} ${prefix}gamewallpaper 🅕
-│${setv} ${prefix}islamic 🅕
-│${setv} ${prefix}jennie 🅕
-│${setv} ${prefix}jiso 🅕
-│${setv} ${prefix}satanic 🅕
-│${setv} ${prefix}justina 🅕
-│${setv} ${prefix}cartoon 🅕
-│${setv} ${prefix}pentol 🅕
-│${setv} ${prefix}cat 🅕
-│${setv} ${prefix}kpop 🅕
-│${setv} ${prefix}exo 🅕
-│${setv} ${prefix}lisa 🅕
-│${setv} ${prefix}space 🅕
-│${setv} ${prefix}car 🅕
-│${setv} ${prefix}technology 🅕
-│${setv} ${prefix}bike 🅕
-│${setv} ${prefix}shortquote 🅕
-│${setv} ${prefix}antiwork 🅕
-│${setv} ${prefix}hacking 🅕
-│${setv} ${prefix}boneka 🅕
-│${setv} ${prefix}rose 🅕
-│${setv} ${prefix}ryujin 🅕
-│${setv} ${prefix}ulzzangboy 🅕
-│${setv} ${prefix}ulzzanggirl 🅕
-│${setv} ${prefix}wallml 🅕
-│${setv} ${prefix}wallphone 🅕
-│${setv} ${prefix}mountain 🅕
-│${setv} ${prefix}goose 🅕
-│${setv} ${prefix}profilepic 🅕
-│${setv} ${prefix}couplepp 🅕
-│${setv} ${prefix}programming 🅕
-│${setv} ${prefix}pubg 🅕
-│${setv} ${prefix}blackpink 🅕
-│${setv} ${prefix}randomboy 🅕  
-│${setv} ${prefix}randomgirl 🅕
-│${setv} ${prefix}hijab 🅕  
-│${setv} ${prefix}chinese 🅕
-│${setv} ${prefix}indo 🅕
-│${setv} ${prefix}japanese 🅕
-│${setv} ${prefix}korean 🅕
-│${setv} ${prefix}malay 🅕
-│${setv} ${prefix}thai 🅕
-│${setv} ${prefix}vietnamese 🅕
-╰─┬────
-╭─┴「 *RANDOM VIDEO* 」
-│${setv} ${prefix}tiktokgirl 🅕
-│${setv} ${prefix}tiktoknukthy 🅕
-│${setv} ${prefix}tiktokkayes 🅕
-│${setv} ${prefix}tiktokpanrika 🅕
-│${setv} ${prefix}tiktoknotnot 🅕
-│${setv} ${prefix}tiktokghea 🅕
-│${setv} ${prefix}tiktoksantuy 🅕
-│${setv} ${prefix}tiktokbocil 🅕
-╰─┬────
-╭─┴「 *STALKER MENU* 」
-│${setv} ${prefix}tiktokstalk 🅕
-│${setv} ${prefix}mlstalk 🅕
-│${setv} ${prefix}npmstalk 🅕
-│${setv} ${prefix}ghstalk 🅕
-╰─┬────
-╭─┴「 *OPEN AI* 」
-│${setv} ${prefix}blackboxai 🅕
-│${setv} ${prefix}travel-assistant 🅕
-│${setv} ${prefix}guru-ai 🅕
-│${setv} ${prefix}emi-ai 🅕
-│${setv} ${prefix}claude-ai 🅕
-│${setv} ${prefix}hercai-cartoon 🅕
-│${setv} ${prefix}hercai-animefy 🅕
-│${setv} ${prefix}hercai-lexica 🅕
-│${setv} ${prefix}hercai-prodia 🅕
-│${setv} ${prefix}hercai-simurg 🅕
-│${setv} ${prefix}hercai-raava 🅕
-│${setv} ${prefix}hercai-shonin 🅕
-│${setv} ${prefix}realistic 🅕
-│${setv} ${prefix}3dmodel 🅕
-│${setv} ${prefix}photoleap 🅕
-│${setv} ${prefix}openai 🅕
-│${setv} ${prefix}dalle 🅕
-│${setv} ${prefix}ai 🅕
-│${setv} ${prefix}remini 🅕
-╰─┬────
-╭─┴「 *GAME MENU* 
-│${setv} ${prefix}truth 🅕
-│${setv} ${prefix}dare 🅕
-│${setv} ${prefix}suit 🅕
-│${setv} ${prefix}tictactoe 🅕
-│${setv} ${prefix}math 🅕
-│${setv} ${prefix}playbomb 🅕
-│${setv} ${prefix}casino 🅕
-│${setv} ${prefix}rob 🅕
-│${setv} ${prefix}slot 🅕
-│${setv} ${prefix}dice 🅕 
-│${setv} ${prefix} profile 🅕
-│${setv} ${prefix} claim 🅕
-│${setv} ${prefix} tmoney 🅕
-│${setv} ${prefix} tflimit 🅕
-╰─┬────
-╭─┴「 *FUN MENU* 」
-│${setv} ${prefix}define 🅕
-│${setv} ${prefix}readmore 🅕
-│${setv} ${prefix}fact 🅕
-│${setv} ${prefix}couple 🅕
-│${setv} ${prefix}soulmate 🅕
-│${setv} ${prefix}stupidcheck 🅕
-│${setv} ${prefix}handsomecheck 🅕
-│${setv} ${prefix}uncleancheck 🅕
-│${setv} ${prefix}hotcheck 🅕
-│${setv} ${prefix}smartcheck 🅕
-│${setv} ${prefix}greatcheck 🅕
-│${setv} ${prefix}evilcheck 🅕
-│${setv} ${prefix}dogcheck 🅕
-│${setv} ${prefix}coolcheck 🅕
-│${setv} ${prefix}waifucheck 🅕
-│${setv} ${prefix}awesomecheck 🅕
-│${setv} ${prefix}gaycheck 🅕
-│${setv} ${prefix}cutecheck 🅕
-│${setv} ${prefix}lesbiancheck 🅕
-│${setv} ${prefix}hornycheck 🅕
-│${setv} ${prefix}prettycheck 🅕
-│${setv} ${prefix}lovelycheck 🅕
-│${setv} ${prefix}uglycheck 🅕
-│${setv} ${prefix}pick 🅕
-│${setv} ${prefix}pickupline 🅕
-│${setv} ${prefix}quotes 🅕
-│${setv} ${prefix}can 🅕
-│${setv} ${prefix}is 🅕
-│${setv} ${prefix}when 🅕
-│${setv} ${prefix}where 🅕
-│${setv} ${prefix}what 🅕
-│${setv} ${prefix}how 🅕
-│${setv} ${prefix}rate 🅕
-│${setv} ${prefix}cry 🅕
-│${setv} ${prefix}kill 🅕
-│${setv} ${prefix}hug 🅕
-│${setv} ${prefix}pat 🅕
-│${setv} ${prefix}lick 🅕 
-│${setv} ${prefix}kiss 🅕
-│${setv} ${prefix}bite 🅕
-│${setv} ${prefix}yeet 🅕
-│${setv} ${prefix}bully 🅕
-│${setv} ${prefix}bonk 🅕
-│${setv} ${prefix}wink 🅕
-│${setv} ${prefix}poke 🅕
-│${setv} ${prefix}nom 🅕
-│${setv} ${prefix}slap 🅕
-│${setv} ${prefix}smile 🅕 
-│${setv} ${prefix}wave 🅕
-│${setv} ${prefix}awoo 🅕
-│${setv} ${prefix}blush 🅕
-│${setv} ${prefix}smug 🅕
-│${setv} ${prefix}glomp 🅕 
-│${setv} ${prefix}happy 🅕
-│${setv} ${prefix}dance 🅕
-│${setv} ${prefix}cringe 🅕
-│${setv} ${prefix}cuddle 🅕
-│${setv} ${prefix}highfive 🅕 
-│${setv} ${prefix}handhold 🅕
-│${setv} ${prefix}spank 🅕
-│${setv} ${prefix}tickle 🅕
-│${setv} ${prefix}feed 🅕
-│${setv} ${prefix}checkme 🅕
-│${setv} ${prefix}sound1 - sound161 🅕
-╰─┬────
-╭─┴「 *STICKERS* 」
-│${setv} ${prefix}goose 🅕
-│${setv} ${prefix}woof 🅕
-│${setv} ${prefix}8ball 🅕
-│${setv} ${prefix}lizard 🅕
-│${setv} ${prefix}meow 🅕
-│${setv} ${prefix}gura 🅕
-│${setv} ${prefix}telestick 🅕
-╰─┬────
-╭─┴「 *ANIME MENU* 」
-│${setv} ${prefix}stickhandhold 🅕
-│${setv} ${prefix}stickshinobu 🅕
-│${setv} ${prefix}stickcuddle 🅕
-│${setv} ${prefix}stickhighfive 🅕
-│${setv} ${prefix}stickdance 🅕
-│${setv} ${prefix}stickcringe 🅕
-│${setv} ${prefix}stickhappy 🅕
-│${setv} ${prefix}stickglomp 🅕
-│${setv} ${prefix}sticksmug 🅕
-│${setv} ${prefix}stickblush 🅕
-│${setv} ${prefix}stickawoo 🅕
-│${setv} ${prefix}stickwave 🅕
-│${setv} ${prefix}sticksmile 🅕
-│${setv} ${prefix}stickslap 🅕
-│${setv} ${prefix}stickpoke 🅕
-│${setv} ${prefix}stickwink 🅕
-│${setv} ${prefix}stickbonk 🅕
-│${setv} ${prefix}stickbully 🅕
-│${setv} ${prefix}stickyeet 🅕
-│${setv} ${prefix}stickbike 🅕
-│${setv} ${prefix}stickkiss 🅕
-│${setv} ${prefix}sticklick 🅕
-│${setv} ${prefix}stickpat 🅕
-│${setv} ${prefix}stickhug 🅕
-│${setv} ${prefix}stickkill 🅕
-│${setv} ${prefix}stickcry 🅕
-│${setv} ${prefix}stickspank 🅕
-│${setv} ${prefix}sticktickle 🅕
-│${setv} ${prefix}traceanime 🅕
-│${setv} ${prefix}akira 🅕
-│${setv} ${prefix}akiyama 🅕
-│${setv} ${prefix}ana 🅕
-│${setv} ${prefix}asuna 🅕
-│${setv} ${prefix}ayuzawa 🅕
-│${setv} ${prefix}boruto 🅕
-│${setv} ${prefix}chiho 🅕
-│${setv} ${prefix}chitoge 🅕
-│${setv} ${prefix}cosplayloli 🅕
-│${setv} ${prefix}cosplaysagiri 🅕
-│${setv} ${prefix}deidara 🅕
-│${setv} ${prefix}doraemon 🅕
-│${setv} ${prefix}elaina 🅕
-│${setv} ${prefix}emilia 🅕
-│${setv} ${prefix}erza 🅕
-│${setv} ${prefix}gremory 🅕
-│${setv} ${prefix}hestia 🅕
-│${setv} ${prefix}husbu 🅕
-│${setv} ${prefix}inori 🅕
-│${setv} ${prefix}isuzu 🅕
-│${setv} ${prefix}itachi 🅕
-│${setv} ${prefix}itori 🅕
-│${setv} ${prefix}kaga 🅕
-│${setv} ${prefix}kagura 🅕
-│${setv} ${prefix}kakasih 🅕
-│${setv} ${prefix}kaori 🅕
-│${setv} ${prefix}keneki 🅕
-│${setv} ${prefix}kotori 🅕
-│${setv} ${prefix}kurumi 🅕
-│${setv} ${prefix}loli 🅕
-│${setv} ${prefix}loli2 🅕
-│${setv} ${prefix}madara 🅕
-│${setv} ${prefix}megumin 🅕
-│${setv} ${prefix}mikasa 🅕
-│${setv} ${prefix}mikey 🅕
-│${setv} ${prefix}miku 🅕
-│${setv} ${prefix}minato 🅕
-│${setv} ${prefix}naruto 🅕
-│${setv} ${prefix}neko 🅕
-│${setv} ${prefix}nekonime 🅕
-│${setv} ${prefix}nezuko 🅕
-│${setv} ${prefix}onepiece 🅕
-│${setv} ${prefix}pokemon 🅕
-│${setv} ${prefix}randomnime 🅕
-│${setv} ${prefix}randomnime2 🅕
-│${setv} ${prefix}rize 🅕
-│${setv} ${prefix}sagiri 🅕
-│${setv} ${prefix}sakura 🅕
-│${setv} ${prefix}sasuke 🅕
-│${setv} ${prefix}shina 🅕
-│${setv} ${prefix}shinka 🅕
-│${setv} ${prefix}shinomiya 🅕
-│${setv} ${prefix}shizuka 🅕
-│${setv} ${prefix}shota 🅕
-│${setv} ${prefix}tejina 🅕
-│${setv} ${prefix}toukachan 🅕
-│${setv} ${prefix}tsunade 🅕
-│${setv} ${prefix}waifu 🅕
-│${setv} ${prefix}waifu2 🅕
-│${setv} ${prefix}animewall 🅕
-│${setv} ${prefix}yotsuba 🅕
-│${setv} ${prefix}yuki 🅕
-│${setv} ${prefix}yulibocil 🅕
-│${setv} ${prefix}yumeko 🅕
-│${setv} ${prefix}8ball 🅕
-│${setv} ${prefix}animeawoo 🅕
-│${setv} ${prefix}animemegumin 🅕
-│${setv} ${prefix}animeshinobu 🅕
-│${setv} ${prefix}animehandhold 🅕
-│${setv} ${prefix}animehighfive 🅕
-│${setv} ${prefix}animecringe 🅕
-│${setv} ${prefix}animedance 🅕
-│${setv} ${prefix}animehappy 🅕
-│${setv} ${prefix}animeglomp 🅕
-│${setv} ${prefix}animeblush 🅕
-│${setv} ${prefix}animesmug 🅕
-│${setv} ${prefix}animewave 🅕
-│${setv} ${prefix}animesmille 🅕
-│${setv} ${prefix}animepoke 🅕
-│${setv} ${prefix}animewink 🅕
-│${setv} ${prefix}animebonk 🅕
-│${setv} ${prefix}animebully 🅕
-│${setv} ${prefix}animeyeet 🅕
-│${setv} ${prefix}animebite 🅕
-│${setv} ${prefix}animelick 🅕
-│${setv} ${prefix}animekill 🅕
-│${setv} ${prefix}animecry 🅕
-│${setv} ${prefix}animewlp 🅕
-│${setv} ${prefix}animekiss 🅕
-│${setv} ${prefix}animehug 🅕
-│${setv} ${prefix}animeneko 🅕
-│${setv} ${prefix}animepat 🅕
-│${setv} ${prefix}animeslap 🅕
-│${setv} ${prefix}animecuddle 🅕
-│${setv} ${prefix}animewaifu 🅕
-│${setv} ${prefix}animenom 🅕
-│${setv} ${prefix}animefoxgirl 🅕
-│${setv} ${prefix}animegecg 🅕
-│${setv} ${prefix}animetickle 🅕
-│${setv} ${prefix}animefeed 🅕
-│${setv} ${prefix}animeavatar 🅕
-│${setv} ${prefix}anime 🅕
-│${setv} ${prefix}avatar 🅕
-│${setv} ${prefix}shinobu 🅕
-│${setv} ${prefix}fox_girl 🅕
-│${setv} ${prefix}gecg 🅕
-╰─┬────
-╭─┴「 *ANIME NSFW* 」
-│${setv} ${prefix}hentai 🅕
-│${setv} ${prefix}gifblowjob 🅕
-│${setv} ${prefix}hentaivid 🅕
-│${setv} ${prefix}hneko 🅕
-│${setv} ${prefix}nwaifu 🅕
-│${setv} ${prefix}animespank 🅕
-│${setv} ${prefix}trap 🅕
-│${setv} ${prefix}blowjob 🅕
-│${setv} ${prefix}cuckold 🅕
-│${setv} ${prefix}milf 🅕
-│${setv} ${prefix}eba 🅕
-│${setv} ${prefix}pussy 🅕
-│${setv} ${prefix}yuri 🅕
-│${setv} ${prefix}zettai 🅕
-╰─┬────
-╭─┴「 *DATABASE* 」
-│${setv} ${prefix}setcmd 🅞
-│${setv} ${prefix}delcmd 🅞
-│${setv} ${prefix}listcmd 🅕
-│${setv} ${prefix}lockcmd 🅞
-│${setv} ${prefix}addmsg 🅞
-│${setv} ${prefix}delmsg 🅞
-│${setv} ${prefix}getmsg 🅕
-│${setv} ${prefix}listmsg 🅕
-╰─┬────
-╭─┴「 *STORE MENU* 」
-│${setv} ${prefix}list 🅕
-│${setv} ${prefix}store 🅕
-│${setv} ${prefix}shop 🅕
-│${setv} ${prefix}addlist 🅞
-│${setv} ${prefix}dellist 🅞
-╰─┬────
-╭─┴「 *RELIGIONS* 」
-│${setv} ${prefix}bible 🅕
-│${setv} ${prefix}quran 🅕
-│${setv} ${prefix}gita 🅕
-╰─┬────
-╭─┴「 *BUG & WAR* 」
-│${setv} ${prefix}xandroid 🅞
-│${setv} ${prefix}xandroid2 🅞
-│${setv} ${prefix}xios 🅞
-│${setv} ${prefix}xios2 🅞
-│${setv} ${prefix}systemuicrash 🅞
-│${setv} ${prefix}xsysui 🅞
-│${setv} ${prefix}🙂 🅞
-│${setv} ${prefix}ioskill 🅞
-│${setv} ${prefix}onekill 🅞
-│${setv} ${prefix}xgcmem 🅞
-╰─┬────
-╭─┴「 *OTHER MENU* 」
-│${setv} ${prefix}update 🅕
-│${setv} ${prefix}ping 🅕
-│${setv} ${prefix}menu 🅕
-│${setv} ${prefix}myip 🅕
-│${setv} ${prefix}repo 🅕
-│${setv} ${prefix}reportbug 🅕
-│${setv} ${prefix}idgroup 🅕
-│${setv} ${prefix}owner 🅕
-│${setv} ${prefix}rentbot 🅕
-│${setv} ${prefix}donate 🅕
-│${setv} ${prefix}runtime 🅕
-│${setv} ${prefix}confess 🅕
-│${setv} ${prefix}react 🅕
-│${setv} ${prefix}q 🅕
-│${setv} ${prefix}inspect 🅕
-│${setv} ${prefix}tagme 🅕
-╰──────`
+╋━${setv} ${prefix}antibot 🅖
+╋━${setv} ${prefix}antiviewonce 🅖
+╋━${setv} ${prefix}readviewonce 🅖
+╋━${setv} ${prefix}welcome 🅖
+╋━${setv} ${prefix}adminevent 🅖
+╋━${setv} ${prefix}groupevent 🅖
+╋━${setv} ${prefix}antiforeign 🅖
+╋━${setv} ${prefix}antimedia 🅖
+╋━${setv} ${prefix}antiaudio 🅖
+╋━${setv} ${prefix}antivideo 🅖
+╋━${setv} ${prefix}antiimage 🅖
+╋━${setv} ${prefix}antidocument 🅖
+╋━${setv} ${prefix}antilocation 🅖
+╋━${setv} ${prefix}anticontact 🅖
+╋━${setv} ${prefix}antisticker 🅖
+╋━${setv} ${prefix}antipoll 🅖
+╋━${setv} ${prefix}antilink 🅖
+╋━${setv} ${prefix}antipromotion 🅖
+╋━${setv} ${prefix}antivirtex 🅖
+╋━${setv} ${prefix}grouplink 🅖
+╋━${setv} ${prefix}listadmin 🅖
+╋━${setv} ${prefix}invite 🅖
+╋━${setv} ${prefix}ephemeral 🅖
+╋━${setv} ${prefix}delete 🅖
+╋━${setv} ${prefix}setppgroup 🅖
+╋━${setv} ${prefix}delppgroup 🅖
+╋━${setv} ${prefix}setnamegc 🅖
+╋━${setv} ${prefix}setdesc 🅖
+╋━${setv} ${prefix}add 🅖
+╋━${setv} ${prefix}kick 🅖
+╋━${setv} ${prefix}promote 🅖
+╋━${setv} ${prefix}demote 🅖
+╋━${setv} ${prefix}kickall 🅖
+╋━${setv} ${prefix}promoteall 🅖
+╋━${setv} ${prefix}demoteall 🅖
+╋━${setv} ${prefix}getcontact 𓇻‎
+╋━${setv} ${prefix}savecontact 𓇻‎
+╋━${setv} ${prefix}sendcontact 𓇻‎
+╋━${setv} ${prefix}contactag 𓇻‎
+╋━${setv} ${prefix}hidetag 🅖
+╋━${setv} ${prefix}totag 🅖
+╋━${setv} ${prefix}tagall 🅖
+╋━${setv} ${prefix}editinfo 🅖
+╋━${setv} ${prefix}opentime 🅖
+╋━${setv} ${prefix}closetime 🅖
+╋━${setv} ${prefix}resetlink 🅖
+╋━${setv} ${prefix}getbio 🅖
+╋━${setv} ${prefix}vote 🅖
+╋━${setv} ${prefix}upvote 🅖
+╋━${setv} ${prefix}downvote 🅖
+╋━${setv} ${prefix}checkvote 🅖
+╋━${setv} ${prefix}delvote 🅖
+╋━${setv} ${prefix}antivirus 🅖
+╋━${setv} ${prefix}antibadword 🅖
+╋━${setv} ${prefix}nsfw 🅖
+╋━${setv} ${prefix}react 🅖
+╋━${setv} ${prefix}getjoinrequest 🅖
+╋━──────♱
+╋━♱*SEARCH MENU*
+╋━${setv} ${prefix}google ♱
+╋━${setv} ${prefix}wikipedia ♱
+╋━${setv} ${prefix}ytsearch ♱
+╋━${setv} ${prefix}xnxxsearch ♱
+╋━${setv} ${prefix}xvideosearch ♱
+╋━${setv} ${prefix}apksearch ♱
+╋━${setv} ${prefix}stickersearch ♱
+╋━${setv} ${prefix}imdb ♱
+╋━${setv} ${prefix}wanumber ♱
+╋━${setv} ${prefix}friend ♱
+╋━${setv} ${prefix}lyrics ♱
+╋━${setv} ${prefix}pixiv ♱
+╋━──────♱
+╋━♱  *DOWNLOADS*  
+╋━${setv} ${prefix}xnxxdl ♱
+╋━${setv} ${prefix}xvideodl ♱
+╋━${setv} ${prefix}itunes ♱
+╋━${setv} ${prefix}play ♱
+╋━${setv} ${prefix}ytmp3 ♱
+╋━${setv} ${prefix}ytmp4 ♱
+╋━${setv} ${prefix}tiktok ♱
+╋━${setv} ${prefix}tiktokaudio ♱
+╋━${setv} ${prefix}tiktokvideo ♱
+╋━${setv} ${prefix}igvideo ♱
+╋━${setv} ${prefix}igimage ♱
+╋━${setv} ${prefix}facebook ♱
+╋━${setv} ${prefix}twitter ♱
+╋━${setv} ${prefix}apk ♱
+╋━${setv} ${prefix}mega ♱
+╋━${setv} ${prefix}mediafire ♱
+╋━${setv} ${prefix}google ♱
+╋━${setv} ${prefix}gimage ♱
+╋━${setv} ${prefix}weather ♱
+╋━${setv} ${prefix}spotify 𓃦
+╋━${setv} ${prefix}gitclone ♱
+╋━${setv} ${prefix}happymod ♱
+╋━${setv} ${prefix}gdrive ♱
+╋━${setv} ${prefix}pinterest ♱
+╋━${setv} ${prefix}ringtone ♱
+╋━${setv} ${prefix}autodownload 𓇻‎
+╋━──────♱
+╋━♱  *TOOL MENU*  
+╋━${setv} ${prefix}obfuscate ♱
+╋━${setv} ${prefix}styletext ♱
+╋━${setv} ${prefix}fliptext ♱
+╋━${setv} ${prefix}tts ♱
+╋━${setv} ${prefix}say ♱
+╋━${setv} ${prefix}togif ♱
+╋━${setv} ${prefix}toqr ♱
+╋━${setv} ${prefix}bass ♱
+╋━${setv} ${prefix}blown ♱
+╋━${setv} ${prefix}deep ♱
+╋━${setv} ${prefix}earrape ♱
+╋━${setv} ${prefix}fast ♱
+╋━${setv} ${prefix}fat ♱
+╋━${setv} ${prefix}nightcore ♱
+╋━${setv} ${prefix}reverse ♱
+╋━${setv} ${prefix}robot ♱
+╋━${setv} ${prefix}slow ♱
+╋━${setv} ${prefix}smooth ♱
+╋━${setv} ${prefix}squirrel ♱
+╋━${setv} ${prefix}tinyurl ♱
+╋━${setv} ${prefix}tovn ♱
+╋━${setv} ${prefix}t ♱
+╋━${setv} ${prefix}toaudio ♱
+╋━${setv} ${prefix}tomp3 ♱
+╋━${setv} ${prefix}tomp4♱
+╋━${setv} ${prefix}toimg ♱
+╋━${setv} ${prefix}toonce ♱
+╋━${setv} ${prefix}toptv ♱
+╋━${setv} ${prefix}sticker ♱
+╋━${setv} ${prefix}smeme ♱
+╋━${setv} ${prefix}smeta ♱
+╋━${setv} ${prefix}take 𓃦
+╋━${setv} ${prefix}emojimix ♱
+╋━${setv} ${prefix}volaudio ♱
+╋━${setv} ${prefix}volvideo ♱
+╋━${setv} ${prefix}ebinary ♱
+╋━${setv} ${prefix}dbinary ♱
+╋━${setv} ${prefix}ssweb ♱
+╋━${setv} ${prefix}quoted ♱
+╋━${setv} ${prefix}translate ♱
+╋━${setv} ${prefix}get ♱
+╋━${setv} ${prefix}tourl ♱
+╋━${setv} ${prefix}write ♱
+╋━──────♱
+╋━♱  *LIST MENU*  
+╋━${setv} ${prefix}listprem ♱
+╋━${setv} ${prefix}listowner ♱
+╋━${setv} ${prefix}liststicker ♱
+╋━${setv} ${prefix}listimage ♱
+╋━${setv} ${prefix}listvideo ♱
+╋━${setv} ${prefix}listvn ♱
+╋━${setv} ${prefix}listapk ♱
+╋━${setv} ${prefix}listzip ♱
+╋━${setv} ${prefix}listpdf ♱
+╋━${setv} ${prefix}listbadword ♱
+╋━${setv} ${prefix}listpc ♱
+╋━${setv} ${prefix}listgc ♱
+╋━──────♱
+╋━♱  *RANDOM PHOTO*  
+╋━${setv} ${prefix}aesthetic ♱
+╋━${setv} ${prefix}coffee ♱
+╋━${setv} ${prefix}wikimedia ♱
+╋━${setv} ${prefix}wallpaper ♱
+╋━${setv} ${prefix}art ♱
+╋━${setv} ${prefix}bts ♱
+╋━${setv} ${prefix}dogwoof ♱
+╋━${setv} ${prefix}catmeow ♱
+╋━${setv} ${prefix}lizardpic ♱
+╋━${setv} ${prefix}goosebird ♱
+╋━${setv} ${prefix}8ballpool ♱
+╋━${setv} ${prefix}cosplay ♱
+╋━${setv} ${prefix}hacker ♱
+╋━${setv} ${prefix}cyber ♱
+╋━${setv} ${prefix}gamewallpaper ♱
+╋━${setv} ${prefix}islamic ♱
+╋━${setv} ${prefix}jennie ♱
+╋━${setv} ${prefix}jiso ♱
+╋━${setv} ${prefix}satanic ♱
+╋━${setv} ${prefix}justina ♱
+╋━${setv} ${prefix}cartoon ♱
+╋━${setv} ${prefix}pentol ♱
+╋━${setv} ${prefix}cat ♱
+╋━${setv} ${prefix}kpop ♱
+╋━${setv} ${prefix}exo ♱
+╋━${setv} ${prefix}lisa ♱
+╋━${setv} ${prefix}space ♱
+╋━${setv} ${prefix}car ♱
+╋━${setv} ${prefix}technology ♱
+╋━${setv} ${prefix}bike ♱
+╋━${setv} ${prefix}shortquote ♱
+╋━${setv} ${prefix}antiwork ♱
+╋━${setv} ${prefix}hacking ♱
+╋━${setv} ${prefix}boneka ♱
+╋━${setv} ${prefix}rose ♱
+╋━${setv} ${prefix}ryujin ♱
+╋━${setv} ${prefix}ulzzangboy ♱
+╋━${setv} ${prefix}ulzzanggirl ♱
+╋━${setv} ${prefix}wallml ♱
+╋━${setv} ${prefix}wallphone ♱
+╋━${setv} ${prefix}mountain ♱
+╋━${setv} ${prefix}goose ♱
+╋━${setv} ${prefix}profilepic ♱
+╋━${setv} ${prefix}couplepp ♱
+╋━${setv} ${prefix}programming ♱
+╋━${setv} ${prefix}pubg ♱
+╋━${setv} ${prefix}blackpink ♱
+╋━${setv} ${prefix}randomboy ♱ 
+╋━${setv} ${prefix}randomgirl ♱
+╋━${setv} ${prefix}hijab ♱ 
+╋━${setv} ${prefix}chinese ♱
+╋━${setv} ${prefix}indo ♱
+╋━${setv} ${prefix}japanese ♱
+╋━${setv} ${prefix}korean ♱
+╋━${setv} ${prefix}malay ♱
+╋━${setv} ${prefix}thai ♱
+╋━${setv} ${prefix}vietnamese ♱
+╋━──────♱
+╋━♱  *RANDOM VIDEO*  
+╋━${setv} ${prefix}tiktokgirl ♱
+╋━${setv} ${prefix}tiktoknukthy ♱
+╋━${setv} ${prefix}tiktokkayes ♱
+╋━${setv} ${prefix}tiktokpanrika ♱
+╋━${setv} ${prefix}tiktoknotnot ♱
+╋━${setv} ${prefix}tiktokghea ♱
+╋━${setv} ${prefix}tiktoksantuy ♱
+╋━${setv} ${prefix}tiktokbocil ♱
+╋━──────♱
+╋━♱  *STALKER MENU*  
+╋━${setv} ${prefix}tiktokstalk ♱
+╋━${setv} ${prefix}mlstalk ♱
+╋━${setv} ${prefix}npmstalk ♱
+╋━${setv} ${prefix}ghstalk ♱
+╋━──────♱
+╋━♱  *OPEN AI*  
+╋━${setv} ${prefix}blackboxai ♱
+╋━${setv} ${prefix}travel-assistant ♱
+╋━${setv} ${prefix}guru-ai ♱
+╋━${setv} ${prefix}emi-ai ♱
+╋━${setv} ${prefix}claude-ai ♱
+╋━${setv} ${prefix}hercai-cartoon ♱
+╋━${setv} ${prefix}hercai-animefy ♱
+╋━${setv} ${prefix}hercai-lexica ♱
+╋━${setv} ${prefix}hercai-prodia ♱
+╋━${setv} ${prefix}hercai-simurg ♱
+╋━${setv} ${prefix}hercai-raava ♱
+╋━${setv} ${prefix}hercai-shonin ♱
+╋━${setv} ${prefix}realistic ♱
+╋━${setv} ${prefix}3dmodel ♱
+╋━${setv} ${prefix}photoleap ♱
+╋━${setv} ${prefix}openai ♱
+╋━${setv} ${prefix}dalle ♱
+╋━${setv} ${prefix}ai ♱
+╋━${setv} ${prefix}remini ♱
+╋━──────♱
+╋━♱  *GAME MENU* 
+╋━${setv} ${prefix}truth ♱
+╋━${setv} ${prefix}dare ♱
+╋━${setv} ${prefix}suit ♱
+╋━${setv} ${prefix}tictactoe ♱
+╋━${setv} ${prefix}math ♱
+╋━${setv} ${prefix}playbomb ♱
+╋━${setv} ${prefix}casino ♱
+╋━${setv} ${prefix}rob ♱
+╋━${setv} ${prefix}slot ♱
+╋━${setv} ${prefix}dice ♱
+╋━${setv} ${prefix} profile ♱
+╋━${setv} ${prefix} claim ♱
+╋━${setv} ${prefix} tmoney ♱
+╋━${setv} ${prefix} tflimit ♱
+╋━──────♱
+╋━♱  *FUN MENU*  
+╋━${setv} ${prefix}define ♱
+╋━${setv} ${prefix}readmore ♱
+╋━${setv} ${prefix}fact ♱
+╋━${setv} ${prefix}couple ♱
+╋━${setv} ${prefix}soulmate ♱
+╋━${setv} ${prefix}stupidcheck ♱
+╋━${setv} ${prefix}handsomecheck ♱
+╋━${setv} ${prefix}uncleancheck ♱
+╋━${setv} ${prefix}hotcheck ♱
+╋━${setv} ${prefix}smartcheck ♱
+╋━${setv} ${prefix}greatcheck ♱
+╋━${setv} ${prefix}evilcheck ♱
+╋━${setv} ${prefix}dogcheck ♱
+╋━${setv} ${prefix}coolcheck ♱
+╋━${setv} ${prefix}waifucheck ♱
+╋━${setv} ${prefix}awesomecheck ♱
+╋━${setv} ${prefix}gaycheck ♱
+╋━${setv} ${prefix}cutecheck ♱
+╋━${setv} ${prefix}lesbiancheck ♱
+╋━${setv} ${prefix}hornycheck ♱
+╋━${setv} ${prefix}prettycheck ♱
+╋━${setv} ${prefix}lovelycheck ♱
+╋━${setv} ${prefix}uglycheck ♱
+╋━${setv} ${prefix}pick ♱
+╋━${setv} ${prefix}pickupline ♱
+╋━${setv} ${prefix}quotes ♱
+╋━${setv} ${prefix}can ♱
+╋━${setv} ${prefix}is ♱
+╋━${setv} ${prefix}when ♱
+╋━${setv} ${prefix}where ♱
+╋━${setv} ${prefix}what ♱
+╋━${setv} ${prefix}how ♱
+╋━${setv} ${prefix}rate ♱
+╋━${setv} ${prefix}cry ♱
+╋━${setv} ${prefix}kill ♱
+╋━${setv} ${prefix}hug ♱
+╋━${setv} ${prefix}pat ♱
+╋━${setv} ${prefix}lick ♱
+╋━${setv} ${prefix}kiss ♱
+╋━${setv} ${prefix}bite ♱
+╋━${setv} ${prefix}yeet ♱
+╋━${setv} ${prefix}bully ♱
+╋━${setv} ${prefix}bonk ♱
+╋━${setv} ${prefix}wink ♱
+╋━${setv} ${prefix}poke ♱
+╋━${setv} ${prefix}nom ♱
+╋━${setv} ${prefix}slap ♱
+╋━${setv} ${prefix}smile ♱
+╋━${setv} ${prefix}wave ♱
+╋━${setv} ${prefix}awoo ♱
+╋━${setv} ${prefix}blush ♱
+╋━${setv} ${prefix}smug ♱
+╋━${setv} ${prefix}glomp ♱
+╋━${setv} ${prefix}happy ♱
+╋━${setv} ${prefix}dance ♱
+╋━${setv} ${prefix}cringe ♱
+╋━${setv} ${prefix}cuddle ♱
+╋━${setv} ${prefix}highfive ♱
+╋━${setv} ${prefix}handhold ♱
+╋━${setv} ${prefix}spank ♱
+╋━${setv} ${prefix}tickle ♱
+╋━${setv} ${prefix}feed ♱
+╋━${setv} ${prefix}checkme ♱
+╋━${setv} ${prefix}sound1 - sound161 ♱
+╋━──────♱
+╋━♱  *STICKERS*  
+╋━${setv} ${prefix}goose ♱
+╋━${setv} ${prefix}woof ♱
+╋━${setv} ${prefix}8ball ♱
+╋━${setv} ${prefix}lizard ♱
+╋━${setv} ${prefix}meow ♱
+╋━${setv} ${prefix}gura ♱
+╋━${setv} ${prefix}telestick ♱
+╋━──────♱
+╋━♱  *ANIME MENU*  
+╋━${setv} ${prefix}stickhandhold ♱
+╋━${setv} ${prefix}stickshinobu ♱
+╋━${setv} ${prefix}stickcuddle ♱
+╋━${setv} ${prefix}stickhighfive ♱
+╋━${setv} ${prefix}stickdance ♱
+╋━${setv} ${prefix}stickcringe ♱
+╋━${setv} ${prefix}stickhappy ♱
+╋━${setv} ${prefix}stickglomp ♱
+╋━${setv} ${prefix}sticksmug ♱
+╋━${setv} ${prefix}stickblush ♱
+╋━${setv} ${prefix}stickawoo ♱
+╋━${setv} ${prefix}stickwave ♱
+╋━${setv} ${prefix}sticksmile ♱
+╋━${setv} ${prefix}stickslap ♱
+╋━${setv} ${prefix}stickpoke ♱
+╋━${setv} ${prefix}stickwink ♱
+╋━${setv} ${prefix}stickbonk ♱
+╋━${setv} ${prefix}stickbully ♱
+╋━${setv} ${prefix}stickyeet ♱
+╋━${setv} ${prefix}stickbike ♱
+╋━${setv} ${prefix}stickkiss ♱
+╋━${setv} ${prefix}sticklick ♱
+╋━${setv} ${prefix}stickpat ♱
+╋━${setv} ${prefix}stickhug ♱
+╋━${setv} ${prefix}stickkill ♱
+╋━${setv} ${prefix}stickcry ♱
+╋━${setv} ${prefix}stickspank ♱
+╋━${setv} ${prefix}sticktickle ♱
+╋━${setv} ${prefix}traceanime ♱
+╋━${setv} ${prefix}akira ♱
+╋━${setv} ${prefix}akiyama ♱
+╋━${setv} ${prefix}ana ♱
+╋━${setv} ${prefix}asuna ♱
+╋━${setv} ${prefix}ayuzawa ♱
+╋━${setv} ${prefix}boruto ♱
+╋━${setv} ${prefix}chiho ♱
+╋━${setv} ${prefix}chitoge ♱
+╋━${setv} ${prefix}cosplayloli ♱
+╋━${setv} ${prefix}cosplaysagiri ♱
+╋━${setv} ${prefix}deidara ♱
+╋━${setv} ${prefix}doraemon ♱
+╋━${setv} ${prefix}elaina ♱
+╋━${setv} ${prefix}emilia ♱
+╋━${setv} ${prefix}erza ♱
+╋━${setv} ${prefix}gremory ♱
+╋━${setv} ${prefix}hestia ♱
+╋━${setv} ${prefix}husbu ♱
+╋━${setv} ${prefix}inori ♱
+╋━${setv} ${prefix}isuzu ♱
+╋━${setv} ${prefix}itachi ♱
+╋━${setv} ${prefix}itori ♱
+╋━${setv} ${prefix}kaga ♱
+╋━${setv} ${prefix}kagura ♱
+╋━${setv} ${prefix}kakasih ♱
+╋━${setv} ${prefix}kaori ♱
+╋━${setv} ${prefix}keneki ♱
+╋━${setv} ${prefix}kotori ♱
+╋━${setv} ${prefix}kurumi ♱
+╋━${setv} ${prefix}loli ♱
+╋━${setv} ${prefix}loli2 ♱
+╋━${setv} ${prefix}madara ♱
+╋━${setv} ${prefix}megumin ♱
+╋━${setv} ${prefix}mikasa ♱
+╋━${setv} ${prefix}mikey ♱
+╋━${setv} ${prefix}miku ♱
+╋━${setv} ${prefix}minato ♱
+╋━${setv} ${prefix}naruto ♱
+╋━${setv} ${prefix}neko ♱
+╋━${setv} ${prefix}nekonime ♱
+╋━${setv} ${prefix}nezuko ♱
+╋━${setv} ${prefix}onepiece ♱
+╋━${setv} ${prefix}pokemon ♱
+╋━${setv} ${prefix}randomnime ♱
+╋━${setv} ${prefix}randomnime2 ♱
+╋━${setv} ${prefix}rize ♱
+╋━${setv} ${prefix}sagiri ♱
+╋━${setv} ${prefix}sakura ♱
+╋━${setv} ${prefix}sasuke ♱
+╋━${setv} ${prefix}shina ♱
+╋━${setv} ${prefix}shinka ♱
+╋━${setv} ${prefix}shinomiya ♱
+╋━${setv} ${prefix}shizuka ♱
+╋━${setv} ${prefix}shota ♱
+╋━${setv} ${prefix}tejina ♱
+╋━${setv} ${prefix}toukachan ♱
+╋━${setv} ${prefix}tsunade ♱
+╋━${setv} ${prefix}waifu ♱
+╋━${setv} ${prefix}waifu2 ♱
+╋━${setv} ${prefix}animewall ♱
+╋━${setv} ${prefix}yotsuba ♱
+╋━${setv} ${prefix}yuki ♱
+╋━${setv} ${prefix}yulibocil ♱
+╋━${setv} ${prefix}yumeko ♱
+╋━${setv} ${prefix}8ball ♱
+╋━${setv} ${prefix}animeawoo ♱
+╋━${setv} ${prefix}animemegumin ♱
+╋━${setv} ${prefix}animeshinobu ♱
+╋━${setv} ${prefix}animehandhold ♱
+╋━${setv} ${prefix}animehighfive ♱
+╋━${setv} ${prefix}animecringe ♱
+╋━${setv} ${prefix}animedance ♱
+╋━${setv} ${prefix}animehappy ♱
+╋━${setv} ${prefix}animeglomp ♱
+╋━${setv} ${prefix}animeblush ♱
+╋━${setv} ${prefix}animesmug ♱
+╋━${setv} ${prefix}animewave ♱
+╋━${setv} ${prefix}animesmille ♱
+╋━${setv} ${prefix}animepoke ♱
+╋━${setv} ${prefix}animewink ♱
+╋━${setv} ${prefix}animebonk ♱
+╋━${setv} ${prefix}animebully ♱
+╋━${setv} ${prefix}animeyeet ♱
+╋━${setv} ${prefix}animebite ♱
+╋━${setv} ${prefix}animelick ♱
+╋━${setv} ${prefix}animekill ♱
+╋━${setv} ${prefix}animecry ♱
+╋━${setv} ${prefix}animewlp ♱
+╋━${setv} ${prefix}animekiss ♱
+╋━${setv} ${prefix}animehug ♱
+╋━${setv} ${prefix}animeneko ♱
+╋━${setv} ${prefix}animepat ♱
+╋━${setv} ${prefix}animeslap ♱
+╋━${setv} ${prefix}animecuddle ♱
+╋━${setv} ${prefix}animewaifu ♱
+╋━${setv} ${prefix}animenom ♱
+╋━${setv} ${prefix}animefoxgirl ♱
+╋━${setv} ${prefix}animegecg ♱
+╋━${setv} ${prefix}animetickle ♱
+╋━${setv} ${prefix}animefeed ♱
+╋━${setv} ${prefix}animeavatar ♱
+╋━${setv} ${prefix}anime ♱
+╋━${setv} ${prefix}avatar ♱
+╋━${setv} ${prefix}shinobu ♱
+╋━${setv} ${prefix}fox_girl ♱
+╋━${setv} ${prefix}gecg ♱
+╋━──────♱
+╋━♱  *ANIME NSFW*  
+╋━${setv} ${prefix}hentai ♱
+╋━${setv} ${prefix}gifblowjob ♱
+╋━${setv} ${prefix}hentaivid ♱
+╋━${setv} ${prefix}hneko ♱
+╋━${setv} ${prefix}nwaifu ♱
+╋━${setv} ${prefix}animespank ♱
+╋━${setv} ${prefix}trap ♱
+╋━${setv} ${prefix}blowjob ♱
+╋━${setv} ${prefix}cuckold ♱
+╋━${setv} ${prefix}milf ♱
+╋━${setv} ${prefix}eba ♱
+╋━${setv} ${prefix}pussy ♱
+╋━${setv} ${prefix}yuri ♱
+╋━${setv} ${prefix}zettai ♱
+╋━──────♱
+╋━♱  *DATABASE*  
+╋━${setv} ${prefix}setcmd 𓇻‎
+╋━${setv} ${prefix}delcmd 𓇻‎
+╋━${setv} ${prefix}listcmd ♱
+╋━${setv} ${prefix}lockcmd 𓇻‎
+╋━${setv} ${prefix}addmsg 𓇻‎
+╋━${setv} ${prefix}delmsg 𓇻‎
+╋━${setv} ${prefix}getmsg ♱
+╋━${setv} ${prefix}listmsg ♱
+╋━──────♱
+╋━♱  *STORE MENU*  
+╋━${setv} ${prefix}list ♱
+╋━${setv} ${prefix}store ♱
+╋━${setv} ${prefix}shop ♱
+╋━${setv} ${prefix}addlist 𓇻‎
+╋━${setv} ${prefix}dellist 𓇻‎
+╋━──────♱
+╋━♱  *RELIGIONS*  
+╋━${setv} ${prefix}bible ♱
+╋━${setv} ${prefix}quran ♱
+╋━${setv} ${prefix}gita ♱
+╋━──────♱
+╋━♱  *BUG & WAR*  
+╋━${setv} ${prefix}xandroid 𓇻‎
+╋━${setv} ${prefix}xandroid2 𓇻‎
+╋━${setv} ${prefix}xios 𓇻‎
+╋━${setv} ${prefix}xios2 𓇻‎
+╋━${setv} ${prefix}systemuicrash 𓇻‎
+╋━${setv} ${prefix}xsysui 𓇻‎
+╋━${setv} ${prefix}🙂 𓇻‎
+╋━${setv} ${prefix}ioskill 𓇻‎
+╋━${setv} ${prefix}onekill 𓇻‎
+╋━${setv} ${prefix}xgcmem 𓇻‎
+╋━──────♱
+╋━♱  *OTHER MENU*  
+╋━${setv} ${prefix}update ♱
+╋━${setv} ${prefix}ping ♱
+╋━${setv} ${prefix}menu ♱
+╋━${setv} ${prefix}myip ♱
+╋━${setv} ${prefix}repo ♱
+╋━${setv} ${prefix}reportbug ♱
+╋━${setv} ${prefix}idgroup ♱
+╋━${setv} ${prefix}owner ♱
+╋━${setv} ${prefix}rentbot ♱
+╋━${setv} ${prefix}donate ♱
+╋━${setv} ${prefix}runtime ♱
+╋━${setv} ${prefix}confess ♱
+╋━${setv} ${prefix}react ♱
+╋━${setv} ${prefix}q ♱
+╋━${setv} ${prefix}inspect ♱
+╋━${setv} ${prefix}tagme ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -18003,19 +18003,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -18053,19 +18053,19 @@ let msg = generateWAMessageFromContent(m.chat, {
                   buttons: [
              {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -18114,7 +18114,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱,
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -18205,19 +18205,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTu 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -18244,96 +18244,96 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'ownermenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *WHY*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} 🥰* 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *OWNER MENU* 」
-│${setv} ${prefix}addbadword 🅞
-│${setv} ${prefix}delbadword 🅞
-│${setv} ${prefix}autoread 🅞
-│${setv} ${prefix}autobio 🅞
-│${setv} ${prefix}autotype 🅞
-│${setv} ${prefix}unavailable 🅞
-│${setv} ${prefix}autorecord 🅞
-│${setv} ${prefix}autorecordtype 🅞
-│${setv} ${prefix}autoswview 🅞
-│${setv} ${prefix}setautoblock 🅞
-│${setv} ${prefix}setantiforeign 🅞
-│${setv} ${prefix}autoblock 🅞
-│${setv} ${prefix}onlygc 🅞
-│${setv} ${prefix}onlypc 🅞
-│${setv} ${prefix}onlyindia 🅞
-│${setv} ${prefix}onlyindo 🅞
-│${setv} ${prefix}anticall 🅞
-│${setv} ${prefix}self 🅞
-│${setv} ${prefix}public 🅞
-│${setv} ${prefix}join 🅞
-│${setv} ${prefix}poll 🅞
-│${setv} ${prefix}spam 🅞
-│${setv} ${prefix}bc 🅞
-│${setv} ${prefix}bcgroup 🅞
-│${setv} ${prefix}setmenu 🅞
-│${setv} ${prefix}setimgmenu 🅞
-│${setv} ${prefix}setvidmenu 🅞
-│${setv} ${prefix}setgifmenu 🅞
-│${setv} ${prefix}setreply 🅞
-│${setv} ${prefix}resethit 🅞
-│${setv} ${prefix}resetuser 🅞
-│${setv} ${prefix}creategc 🅞
-│${setv} ${prefix}setexif 🅞
-│${setv} ${prefix}getexif 🅞
-│${setv} ${prefix}getautoblocknumber 🅞
-│${setv} ${prefix}getantiforeignnumber 🅞
-│${setv} ${prefix}userjid 🅞
-│${setv} ${prefix}setbotbio 🅞
-│${setv} ${prefix}delppbot 🅞
-│${setv} ${prefix}shutdown 🅞
-│${setv} ${prefix}setppbot 🅞
-│${setv} ${prefix}addprem 🅞
-│${setv} ${prefix}delprem 🅞
-│${setv} ${prefix}addowner 🅞
-│${setv} ${prefix}delowner 🅞
-│${setv} ${prefix}addvn 🅞
-│${setv} ${prefix}addapk 🅞
-│${setv} ${prefix}addzip 🅞
-│${setv} ${prefix}addpdf 🅞
-│${setv} ${prefix}delapk 🅞
-│${setv} ${prefix}delzip 🅞
-│${setv} ${prefix}delpdf 🅞
-│${setv} ${prefix}delvn 🅞
-│${setv} ${prefix}addsticker 🅞
-│${setv} ${prefix}delsticker 🅞
-│${setv} ${prefix}addimage 🅞
-│${setv} ${prefix}delimage 🅞
-│${setv} ${prefix}addvideo 🅞
-│${setv} ${prefix}delvideo 🅞
-│${setv} ${prefix}upswtext 🅞
-│${setv} ${prefix}upswvideo 🅞
-│${setv} ${prefix}upswimage 🅞
-│${setv} ${prefix}upswaudio 🅞
-│${setv} ${prefix}autosticker 🅞
-│${setv} ${prefix}block 🅞
-│${setv} ${prefix}unblock 🅞
-│${setv} ${prefix}leavegc 🅞
-│${setv} ${prefix}pushcontact 🅞
-│${setv} ${prefix}pushcontactv2 🅞
-│${setv} ${prefix}pushcontactv3 🅞
-│${setv} ${prefix}jpm 🅞
-│${setv} ${prefix}checkmember 🅞
-│${setv} ${prefix}post 🅞
-│${setv} ${prefix}clearchat 🅞
-│${setv} ${prefix}setprefix 🅞
-│${setv} $ 🅞
-│${setv} > 🅞
-│${setv} < 🅞
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *WHY*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} 💣* 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *OWNER MENU*  
+╋━${setv} ${prefix}addbadword 𓇻‎
+╋━${setv} ${prefix}delbadword 𓇻‎
+╋━${setv} ${prefix}autoread 𓇻‎
+╋━${setv} ${prefix}autobio 𓇻‎
+╋━${setv} ${prefix}autotype 𓇻‎
+╋━${setv} ${prefix}unavailable 𓇻‎
+╋━${setv} ${prefix}autorecord 𓇻‎
+╋━${setv} ${prefix}autorecordtype 𓇻‎
+╋━${setv} ${prefix}autoswview 𓇻‎
+╋━${setv} ${prefix}setautoblock 𓇻‎
+╋━${setv} ${prefix}setantiforeign 𓇻‎
+╋━${setv} ${prefix}autoblock 𓇻‎
+╋━${setv} ${prefix}onlygc 𓇻‎
+╋━${setv} ${prefix}onlypc 𓇻‎
+╋━${setv} ${prefix}onlyindia 𓇻‎
+╋━${setv} ${prefix}onlyindo 𓇻‎
+╋━${setv} ${prefix}anticall 𓇻‎
+╋━${setv} ${prefix}self 𓇻‎
+╋━${setv} ${prefix}public 𓇻‎
+╋━${setv} ${prefix}join 𓇻‎
+╋━${setv} ${prefix}poll 𓇻‎
+╋━${setv} ${prefix}spam 𓇻‎
+╋━${setv} ${prefix}bc 𓇻‎
+╋━${setv} ${prefix}bcgroup 𓇻‎
+╋━${setv} ${prefix}setmenu 𓇻‎
+╋━${setv} ${prefix}setimgmenu 𓇻‎
+╋━${setv} ${prefix}setvidmenu 𓇻‎
+╋━${setv} ${prefix}setgifmenu 𓇻‎
+╋━${setv} ${prefix}setreply 𓇻‎
+╋━${setv} ${prefix}resethit 𓇻‎
+╋━${setv} ${prefix}resetuser 𓇻‎
+╋━${setv} ${prefix}creategc 𓇻‎
+╋━${setv} ${prefix}setexif 𓇻‎
+╋━${setv} ${prefix}getexif 𓇻‎
+╋━${setv} ${prefix}getautoblocknumber 𓇻‎
+╋━${setv} ${prefix}getantiforeignnumber 𓇻‎
+╋━${setv} ${prefix}userjid 𓇻‎
+╋━${setv} ${prefix}setbotbio 𓇻‎
+╋━${setv} ${prefix}delppbot 𓇻‎
+╋━${setv} ${prefix}shutdown 𓇻‎
+╋━${setv} ${prefix}setppbot 𓇻‎
+╋━${setv} ${prefix}addprem 𓇻‎
+╋━${setv} ${prefix}delprem 𓇻‎
+╋━${setv} ${prefix}addowner 𓇻‎
+╋━${setv} ${prefix}delowner 𓇻‎
+╋━${setv} ${prefix}addvn 𓇻‎
+╋━${setv} ${prefix}addapk 𓇻‎
+╋━${setv} ${prefix}addzip 𓇻‎
+╋━${setv} ${prefix}addpdf 𓇻‎
+╋━${setv} ${prefix}delapk 𓇻‎
+╋━${setv} ${prefix}delzip 𓇻‎
+╋━${setv} ${prefix}delpdf 𓇻‎
+╋━${setv} ${prefix}delvn 𓇻‎
+╋━${setv} ${prefix}addsticker 𓇻‎
+╋━${setv} ${prefix}delsticker 𓇻‎
+╋━${setv} ${prefix}addimage 𓇻‎
+╋━${setv} ${prefix}delimage 𓇻‎
+╋━${setv} ${prefix}addvideo 𓇻‎
+╋━${setv} ${prefix}delvideo 𓇻‎
+╋━${setv} ${prefix}upswtext 𓇻‎
+╋━${setv} ${prefix}upswvideo 𓇻‎
+╋━${setv} ${prefix}upswimage 𓇻‎
+╋━${setv} ${prefix}upswaudio 𓇻‎
+╋━${setv} ${prefix}autosticker 𓇻‎
+╋━${setv} ${prefix}block 𓇻‎
+╋━${setv} ${prefix}unblock 𓇻‎
+╋━${setv} ${prefix}leavegc 𓇻‎
+╋━${setv} ${prefix}pushcontact 𓇻‎
+╋━${setv} ${prefix}pushcontactv2 𓇻‎
+╋━${setv} ${prefix}pushcontactv3 𓇻‎
+╋━${setv} ${prefix}jpm 𓇻‎
+╋━${setv} ${prefix}checkmember 𓇻‎
+╋━${setv} ${prefix}post 𓇻‎
+╋━${setv} ${prefix}clearchat 𓇻‎
+╋━${setv} ${prefix}setprefix 𓇻‎
+╋━${setv} $ 𓇻‎
+╋━${setv} > 𓇻‎
+╋━${setv} < 𓇻‎
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -18490,19 +18490,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -18540,19 +18540,19 @@ let msg = generateWAMessageFromContent(m.chat, {
                   buttons: [
              {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -18601,7 +18601,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -18692,19 +18692,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -18731,76 +18731,76 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'groupmenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *DIFFERENT*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium 
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *DIFFERENT*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium 
 User*
-╰─┬────
-╭─┴「 *GROUP MENU* 」
-│${setv} ${prefix}antibot 🅖
-│${setv} ${prefix}antiviewonce 🅖
-│${setv} ${prefix}readviewonce 🅖
-│${setv} ${prefix}welcome 🅖
-│${setv} ${prefix}adminevent 🅖
-│${setv} ${prefix}groupevent 🅖
-│${setv} ${prefix}antiforeign 🅖
-│${setv} ${prefix}antimedia 🅖
-│${setv} ${prefix}antiaudio 🅖
-│${setv} ${prefix}antivideo 🅖
-│${setv} ${prefix}antiimage 🅖
-│${setv} ${prefix}antidocument 🅖
-│${setv} ${prefix}antilocation 🅖
-│${setv} ${prefix}anticontact 🅖
-│${setv} ${prefix}antisticker 🅖
-│${setv} ${prefix}antipoll 🅖
-│${setv} ${prefix}antilink 🅖
-│${setv} ${prefix}antipromotion 🅖
-│${setv} ${prefix}antivirtex 🅖
-│${setv} ${prefix}grouplink 🅖
-│${setv} ${prefix}listadmin 🅖
-│${setv} ${prefix}invite 🅖
-│${setv} ${prefix}ephemeral 🅖
-│${setv} ${prefix}delete 🅖
-│${setv} ${prefix}setppgroup 🅖
-│${setv} ${prefix}delppgroup 🅖
-│${setv} ${prefix}setnamegc 🅖
-│${setv} ${prefix}setdesc 🅖
-│${setv} ${prefix}add 🅖
-│${setv} ${prefix}kick 🅖
-│${setv} ${prefix}promote 🅖
-│${setv} ${prefix}demote 🅖
-│${setv} ${prefix}kickall 🅖
-│${setv} ${prefix}promoteall 🅖
-│${setv} ${prefix}demoteall 🅖
-│${setv} ${prefix}getcontact 🅞
-│${setv} ${prefix}savecontact 🅞
-│${setv} ${prefix}sendcontact 🅞
-│${setv} ${prefix}contactag 🅞
-│${setv} ${prefix}hidetag 🅖
-│${setv} ${prefix}totag 🅖
-│${setv} ${prefix}tagall 🅖
-│${setv} ${prefix}editinfo 🅖
-│${setv} ${prefix}opentime 🅖
-│${setv} ${prefix}closetime 🅖
-│${setv} ${prefix}resetlink 🅖
-│${setv} ${prefix}getbio 🅖
-│${setv} ${prefix}vote 🅖
-│${setv} ${prefix}upvote 🅖
-│${setv} ${prefix}downvote 🅖
-│${setv} ${prefix}checkvote 🅖
-│${setv} ${prefix}delvote 🅖
-│${setv} ${prefix}antivirus 🅖
-│${setv} ${prefix}antibadword 🅖
-│${setv} ${prefix}nsfw 🅖
-│${setv} ${prefix}react 🅖
-│${setv} ${prefix}getjoinrequest 🅖
-╰──────`
+╋━──────♱
+╋━♱  *GROUP MENU*  
+╋━${setv} ${prefix}antibot 🅖
+╋━${setv} ${prefix}antiviewonce 🅖
+╋━${setv} ${prefix}readviewonce 🅖
+╋━${setv} ${prefix}welcome 🅖
+╋━${setv} ${prefix}adminevent 🅖
+╋━${setv} ${prefix}groupevent 🅖
+╋━${setv} ${prefix}antiforeign 🅖
+╋━${setv} ${prefix}antimedia 🅖
+╋━${setv} ${prefix}antiaudio 🅖
+╋━${setv} ${prefix}antivideo 🅖
+╋━${setv} ${prefix}antiimage 🅖
+╋━${setv} ${prefix}antidocument 🅖
+╋━${setv} ${prefix}antilocation 🅖
+╋━${setv} ${prefix}anticontact 🅖
+╋━${setv} ${prefix}antisticker 🅖
+╋━${setv} ${prefix}antipoll 🅖
+╋━${setv} ${prefix}antilink 🅖
+╋━${setv} ${prefix}antipromotion 🅖
+╋━${setv} ${prefix}antivirtex 🅖
+╋━${setv} ${prefix}grouplink 🅖
+╋━${setv} ${prefix}listadmin 🅖
+╋━${setv} ${prefix}invite 🅖
+╋━${setv} ${prefix}ephemeral 🅖
+╋━${setv} ${prefix}delete 🅖
+╋━${setv} ${prefix}setppgroup 🅖
+╋━${setv} ${prefix}delppgroup 🅖
+╋━${setv} ${prefix}setnamegc 🅖
+╋━${setv} ${prefix}setdesc 🅖
+╋━${setv} ${prefix}add 🅖
+╋━${setv} ${prefix}kick 🅖
+╋━${setv} ${prefix}promote 🅖
+╋━${setv} ${prefix}demote 🅖
+╋━${setv} ${prefix}kickall 🅖
+╋━${setv} ${prefix}promoteall 🅖
+╋━${setv} ${prefix}demoteall 🅖
+╋━${setv} ${prefix}getcontact 𓇻‎
+╋━${setv} ${prefix}savecontact 𓇻‎
+╋━${setv} ${prefix}sendcontact 𓇻‎
+╋━${setv} ${prefix}contactag 𓇻‎
+╋━${setv} ${prefix}hidetag 🅖
+╋━${setv} ${prefix}totag 🅖
+╋━${setv} ${prefix}tagall 🅖
+╋━${setv} ${prefix}editinfo 🅖
+╋━${setv} ${prefix}opentime 🅖
+╋━${setv} ${prefix}closetime 🅖
+╋━${setv} ${prefix}resetlink 🅖
+╋━${setv} ${prefix}getbio 🅖
+╋━${setv} ${prefix}vote 🅖
+╋━${setv} ${prefix}upvote 🅖
+╋━${setv} ${prefix}downvote 🅖
+╋━${setv} ${prefix}checkvote 🅖
+╋━${setv} ${prefix}delvote 🅖
+╋━${setv} ${prefix}antivirus 🅖
+╋━${setv} ${prefix}antibadword 🅖
+╋━${setv} ${prefix}nsfw 🅖
+╋━${setv} ${prefix}react 🅖
+╋━${setv} ${prefix}getjoinrequest 🅖
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -18957,19 +18957,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -19007,19 +19007,19 @@ let msg = generateWAMessageFromContent(m.chat, {
                   buttons: [
              {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -19068,7 +19068,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -19159,19 +19159,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	     }
            ],
           }),
@@ -19198,30 +19198,30 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'searchmenu': {
 let xmenu_oh = `
-╭──「 *GREETING* 」
-├${setv} *DAYS*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *SEARCH MENU* 」
-│${setv} ${prefix}google 🅕
-│${setv} ${prefix}wikipedia 🅕
-│${setv} ${prefix}ytsearch 🅕
-│${setv} ${prefix}xnxxsearch 🅕
-│${setv} ${prefix}xvideosearch 🅕
-│${setv} ${prefix}apksearch 🅕
-│${setv} ${prefix}stickersearch 🅕
-│${setv} ${prefix}imdb 🅕
-│${setv} ${prefix}wanumber 🅕
-│${setv} ${prefix}friend 🅕
-│${setv} ${prefix}lyrics 🅕
-│${setv} ${prefix}pixiv 🅕
-╰──────`
+━♱  *GREETING*  
+⨺${setv} *DAYS*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *SEARCH MENU*  
+╋━${setv} ${prefix}google ♱
+╋━${setv} ${prefix}wikipedia ♱
+╋━${setv} ${prefix}ytsearch ♱
+╋━${setv} ${prefix}xnxxsearch ♱
+╋━${setv} ${prefix}xvideosearch ♱
+╋━${setv} ${prefix}apksearch ♱
+╋━${setv} ${prefix}stickersearch ♱
+╋━${setv} ${prefix}imdb ♱
+╋━${setv} ${prefix}wanumber ♱
+╋━${setv} ${prefix}friend ♱
+╋━${setv} ${prefix}lyrics ♱
+╋━${setv} ${prefix}pixiv ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -19378,19 +19378,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -19440,7 +19440,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -19489,7 +19489,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -19580,19 +19580,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -19619,44 +19619,44 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'downloadmenu': {
 let xmenu_oh = `
-╭──「 *GREETING* 」
-├${setv} *DAYS*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *DOWNLOADS* 」
-│${setv} ${prefix}xnxxdl 🅕
-│${setv} ${prefix}xvideodl 🅕
-│${setv} ${prefix}itunes 🅕
-│${setv} ${prefix}play ??
-│${setv} ${prefix}ytmp3 🅕
-│${setv} ${prefix}ytmp4 🅕
-│${setv} ${prefix}tiktok 🅕
-│${setv} ${prefix}tiktokaudio 🅕
-│${setv} ${prefix}tiktokvideo 🅕
-│${setv} ${prefix}igvideo 🅕
-│${setv} ${prefix}igimage 🅕
-│${setv} ${prefix}facebook 🅕
-│${setv} ${prefix}twitter 🅕
-│${setv} ${prefix}apk 🅕
-│${setv} ${prefix}mega 🅕
-│${setv} ${prefix}mediafire 🅕
-│${setv} ${prefix}google 🅕
-│${setv} ${prefix}gimage 🅕
-│${setv} ${prefix}weather 🅕
-│${setv} ${prefix}spotify 🅟
-│${setv} ${prefix}gitclone 🅕
-│${setv} ${prefix}happymod 🅕
-│${setv} ${prefix}gdrive 🅕
-│${setv} ${prefix}pinterest 🅕
-│${setv} ${prefix}ringtone 🅕
-│${setv} ${prefix}autodownload 🅞
-╰──────`
+━♱  *GREETING*  
+⨺${setv} *DAYS*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *DOWNLOADS*  
+╋━${setv} ${prefix}xnxxdl ♱
+╋━${setv} ${prefix}xvideodl ♱
+╋━${setv} ${prefix}itunes ♱
+╋━${setv} ${prefix}play ??
+╋━${setv} ${prefix}ytmp3 ♱
+╋━${setv} ${prefix}ytmp4 ♱
+╋━${setv} ${prefix}tiktok ♱
+╋━${setv} ${prefix}tiktokaudio ♱
+╋━${setv} ${prefix}tiktokvideo ♱
+╋━${setv} ${prefix}igvideo ♱
+╋━${setv} ${prefix}igimage ♱
+╋━${setv} ${prefix}facebook ♱
+╋━${setv} ${prefix}twitter ♱
+╋━${setv} ${prefix}apk ♱
+╋━${setv} ${prefix}mega ♱
+╋━${setv} ${prefix}mediafire ♱
+╋━${setv} ${prefix}google ♱
+╋━${setv} ${prefix}gimage ♱
+╋━${setv} ${prefix}weather ♱
+╋━${setv} ${prefix}spotify 𓃦
+╋━${setv} ${prefix}gitclone ♱
+╋━${setv} ${prefix}happymod ♱
+╋━${setv} ${prefix}gdrive ♱
+╋━${setv} ${prefix}pinterest ♱
+╋━${setv} ${prefix}ringtone ♱
+╋━${setv} ${prefix}autodownload 𓇻‎
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -19825,7 +19825,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -19875,7 +19875,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -19924,7 +19924,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"📶 ALL MENU 🎊",
 "title":"click to display",
@@ -20015,19 +20015,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -20054,61 +20054,61 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'toolmenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *SAME*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *TOOL MENU* 」
-│${setv} ${prefix}obfuscate 🅕
-│${setv} ${prefix}styletext 🅕
-│${setv} ${prefix}fliptext 🅕
-│${setv} ${prefix}tts 🅕
-│${setv} ${prefix}say 🅕
-│${setv} ${prefix}togif 🅕
-│${setv} ${prefix}toqr 🅕
-│${setv} ${prefix}bass 🅕
-│${setv} ${prefix}blown 🅕
-│${setv} ${prefix}deep 🅕
-│${setv} ${prefix}earrape 🅕
-│${setv} ${prefix}fast 🅕
-│${setv} ${prefix}fat 🅕
-│${setv} ${prefix}nightcore 🅕
-│${setv} ${prefix}reverse 🅕
-│${setv} ${prefix}robot 🅕
-│${setv} ${prefix}slow 🅕
-│${setv} ${prefix}smooth 🅕
-│${setv} ${prefix}squirrel 🅕
-│${setv} ${prefix}tinyurl 🅕
-│${setv} ${prefix}tovn 🅕
-│${setv} ${prefix}toptv 🅕
-│${setv} ${prefix}toaudio 🅕
-│${setv} ${prefix}tomp3 🅕
-│${setv} ${prefix}tomp4🅕
-│${setv} ${prefix}toimg 🅕
-│${setv} ${prefix}toonce 🅕
-│${setv} ${prefix}toptv 🅕
-│${setv} ${prefix}sticker 🅕
-│${setv} ${prefix}smeme 🅕
-│${setv} ${prefix}smeta 🅕
-│${setv} ${prefix}take 🅟
-│${setv} ${prefix}emojimix 🅕
-│${setv} ${prefix}volaudio 🅕
-│${setv} ${prefix}volvideo 🅕
-│${setv} ${prefix}ebinary 🅕
-│${setv} ${prefix}dbinary 🅕
-│${setv} ${prefix}ssweb 🅕
-│${setv} ${prefix}quoted 🅕
-│${setv} ${prefix}translate 🅕
-│${setv} ${prefix}get 🅕
-│${setv} ${prefix}tourl 🅕
-│${setv} ${prefix}write 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *SAME*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *TOOL MENU*  
+╋━${setv} ${prefix}obfuscate ♱
+╋━${setv} ${prefix}styletext ♱
+╋━${setv} ${prefix}fliptext ♱
+╋━${setv} ${prefix}tts ♱
+╋━${setv} ${prefix}say ♱
+╋━${setv} ${prefix}togif ♱
+╋━${setv} ${prefix}toqr ♱
+╋━${setv} ${prefix}bass ♱
+╋━${setv} ${prefix}blown ♱
+╋━${setv} ${prefix}deep ♱
+╋━${setv} ${prefix}earrape ♱
+╋━${setv} ${prefix}fast ♱
+╋━${setv} ${prefix}fat ♱
+╋━${setv} ${prefix}nightcore ♱
+╋━${setv} ${prefix}reverse ♱
+╋━${setv} ${prefix}robot ♱
+╋━${setv} ${prefix}slow ♱
+╋━${setv} ${prefix}smooth ♱
+╋━${setv} ${prefix}squirrel ♱
+╋━${setv} ${prefix}tinyurl ♱
+╋━${setv} ${prefix}tovn ♱
+╋━${setv} ${prefix}toptv ♱
+╋━${setv} ${prefix}toaudio ♱
+╋━${setv} ${prefix}tomp3 ♱
+╋━${setv} ${prefix}tomp4♱
+╋━${setv} ${prefix}toimg ♱
+╋━${setv} ${prefix}toonce ♱
+╋━${setv} ${prefix}toptv ♱
+╋━${setv} ${prefix}sticker ♱
+╋━${setv} ${prefix}smeme ♱
+╋━${setv} ${prefix}smeta ♱
+╋━${setv} ${prefix}take 𓃦
+╋━${setv} ${prefix}emojimix ♱
+╋━${setv} ${prefix}volaudio ♱
+╋━${setv} ${prefix}volvideo ♱
+╋━${setv} ${prefix}ebinary ♱
+╋━${setv} ${prefix}dbinary ♱
+╋━${setv} ${prefix}ssweb ♱
+╋━${setv} ${prefix}quoted ♱
+╋━${setv} ${prefix}translate ♱
+╋━${setv} ${prefix}get ♱
+╋━${setv} ${prefix}tourl ♱
+╋━${setv} ${prefix}write ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -20277,7 +20277,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -20327,7 +20327,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               },              
               {
   "name": "quick_reply",
@@ -20380,7 +20380,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -20471,19 +20471,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -20510,30 +20510,30 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'listmenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *NO*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *LIST MENU* 」
-│${setv} ${prefix}listprem 🅕
-│${setv} ${prefix}listowner 🅕
-│${setv} ${prefix}liststicker 🅕
-│${setv} ${prefix}listimage 🅕
-│${setv} ${prefix}listvideo 🅕
-│${setv} ${prefix}listvn 🅕
-│${setv} ${prefix}listapk 🅕
-│${setv} ${prefix}listzip 🅕
-│${setv} ${prefix}listpdf 🅕
-│${setv} ${prefix}listbadword 🅕
-│${setv} ${prefix}listpc 🅕
-│${setv} ${prefix}listgc 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *NO*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *LIST MENU*  
+╋━${setv} ${prefix}listprem ♱
+╋━${setv} ${prefix}listowner ♱
+╋━${setv} ${prefix}liststicker ♱
+╋━${setv} ${prefix}listimage ♱
+╋━${setv} ${prefix}listvideo ♱
+╋━${setv} ${prefix}listvn ♱
+╋━${setv} ${prefix}listapk ♱
+╋━${setv} ${prefix}listzip ♱
+╋━${setv} ${prefix}listpdf ♱
+╋━${setv} ${prefix}listbadword ♱
+╋━${setv} ${prefix}listpc ♱
+╋━${setv} ${prefix}listgc ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -20702,7 +20702,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -20752,7 +20752,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -20801,7 +20801,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -20892,19 +20892,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -20931,75 +20931,75 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomphotomenu': {
 let xmenu_oh = `
-╭──「 *TTHE MONSTER* 」
-├${setv} *STRESS*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *RANDOM PHOTO* 」
-│${setv} ${prefix}aesthetic 🅕
-│${setv} ${prefix}coffee 🅕
-│${setv} ${prefix}wikimedia 🅕
-│${setv} ${prefix}wallpaper 🅕
-│${setv} ${prefix}art 🅕
-│${setv} ${prefix}bts 🅕
-│${setv} ${prefix}dogwoof 🅕
-│${setv} ${prefix}catmeow 🅕
-│${setv} ${prefix}lizardpic 🅕
-│${setv} ${prefix}goosebird 🅕
-│${setv} ${prefix}8ballpool 🅕
-│${setv} ${prefix}cosplay 🅕
-│${setv} ${prefix}hacker 🅕
-│${setv} ${prefix}cyber 🅕
-│${setv} ${prefix}gamewallpaper 🅕
-│${setv} ${prefix}islamic 🅕
-│${setv} ${prefix}jennie 🅕
-│${setv} ${prefix}jiso 🅕
-│${setv} ${prefix}satanic 🅕
-│${setv} ${prefix}justina 🅕
-│${setv} ${prefix}cartoon 🅕
-│${setv} ${prefix}pentol 🅕
-│${setv} ${prefix}cat 🅕
-│${setv} ${prefix}kpop 🅕
-│${setv} ${prefix}exo 🅕
-│${setv} ${prefix}lisa 🅕
-│${setv} ${prefix}space 🅕
-│${setv} ${prefix}car 🅕
-│${setv} ${prefix}technology 🅕
-│${setv} ${prefix}bike 🅕
-│${setv} ${prefix}shortquote 🅕
-│${setv} ${prefix}antiwork 🅕
-│${setv} ${prefix}hacking 🅕
-│${setv} ${prefix}boneka 🅕
-│${setv} ${prefix}rose 🅕
-│${setv} ${prefix}ryujin 🅕
-│${setv} ${prefix}ulzzangboy 🅕
-│${setv} ${prefix}ulzzanggirl 🅕
-│${setv} ${prefix}wallml 🅕
-│${setv} ${prefix}wallphone 🅕
-│${setv} ${prefix}mountain 🅕
-│${setv} ${prefix}goose 🅕
-│${setv} ${prefix}profilepic 🅕
-│${setv} ${prefix}couplepp 🅕
-│${setv} ${prefix}programming 🅕
-│${setv} ${prefix}pubg 🅕
-│${setv} ${prefix}blackpink 🅕
-│${setv} ${prefix}randomboy 🅕  
-│${setv} ${prefix}randomgirl 🅕
-│${setv} ${prefix}hijab 🅕  
-│${setv} ${prefix}chinese 🅕
-│${setv} ${prefix}indo 🅕
-│${setv} ${prefix}japanese 🅕
-│${setv} ${prefix}korean 🅕
-│${setv} ${prefix}malay 🅕
-│${setv} ${prefix}thai 🅕
-│${setv} ${prefix}vietnamese 🅕
-╰──────`
+━♱  *T⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *STRESS*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *RANDOM PHOTO*  
+╋━${setv} ${prefix}aesthetic ♱
+╋━${setv} ${prefix}coffee ♱
+╋━${setv} ${prefix}wikimedia ♱
+╋━${setv} ${prefix}wallpaper ♱
+╋━${setv} ${prefix}art ♱
+╋━${setv} ${prefix}bts ♱
+╋━${setv} ${prefix}dogwoof ♱
+╋━${setv} ${prefix}catmeow ♱
+╋━${setv} ${prefix}lizardpic ♱
+╋━${setv} ${prefix}goosebird ♱
+╋━${setv} ${prefix}8ballpool ♱
+╋━${setv} ${prefix}cosplay ♱
+╋━${setv} ${prefix}hacker ♱
+╋━${setv} ${prefix}cyber ♱
+╋━${setv} ${prefix}gamewallpaper ♱
+╋━${setv} ${prefix}islamic ♱
+╋━${setv} ${prefix}jennie ♱
+╋━${setv} ${prefix}jiso ♱
+╋━${setv} ${prefix}satanic ♱
+╋━${setv} ${prefix}justina ♱
+╋━${setv} ${prefix}cartoon ♱
+╋━${setv} ${prefix}pentol ♱
+╋━${setv} ${prefix}cat ♱
+╋━${setv} ${prefix}kpop ♱
+╋━${setv} ${prefix}exo ♱
+╋━${setv} ${prefix}lisa ♱
+╋━${setv} ${prefix}space ♱
+╋━${setv} ${prefix}car ♱
+╋━${setv} ${prefix}technology ♱
+╋━${setv} ${prefix}bike ♱
+╋━${setv} ${prefix}shortquote ♱
+╋━${setv} ${prefix}antiwork ♱
+╋━${setv} ${prefix}hacking ♱
+╋━${setv} ${prefix}boneka ♱
+╋━${setv} ${prefix}rose ♱
+╋━${setv} ${prefix}ryujin ♱
+╋━${setv} ${prefix}ulzzangboy ♱
+╋━${setv} ${prefix}ulzzanggirl ♱
+╋━${setv} ${prefix}wallml ♱
+╋━${setv} ${prefix}wallphone ♱
+╋━${setv} ${prefix}mountain ♱
+╋━${setv} ${prefix}goose ♱
+╋━${setv} ${prefix}profilepic ♱
+╋━${setv} ${prefix}couplepp ♱
+╋━${setv} ${prefix}programming ♱
+╋━${setv} ${prefix}pubg ♱
+╋━${setv} ${prefix}blackpink ♱
+╋━${setv} ${prefix}randomboy ♱ 
+╋━${setv} ${prefix}randomgirl ♱
+╋━${setv} ${prefix}hijab ♱ 
+╋━${setv} ${prefix}chinese ♱
+╋━${setv} ${prefix}indo ♱
+╋━${setv} ${prefix}japanese ♱
+╋━${setv} ${prefix}korean ♱
+╋━${setv} ${prefix}malay ♱
+╋━${setv} ${prefix}thai ♱
+╋━${setv} ${prefix}vietnamese ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -21168,7 +21168,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -21218,7 +21218,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -21267,7 +21267,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -21358,19 +21358,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -21397,26 +21397,26 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomvideomenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *TYPE*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *RANDOM VIDEO* 」
-│${setv} ${prefix}tiktokgirl 🅕
-│${setv} ${prefix}tiktoknukthy 🅕
-│${setv} ${prefix}tiktokkayes 🅕
-│${setv} ${prefix}tiktokpanrika 🅕
-│${setv} ${prefix}tiktoknotnot 🅕
-│${setv} ${prefix}tiktokghea 🅕
-│${setv} ${prefix}tiktoksantuy 🅕
-│${setv} ${prefix}tiktokbocil 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *TYPE*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *RANDOM VIDEO*  
+╋━${setv} ${prefix}tiktokgirl ♱
+╋━${setv} ${prefix}tiktoknukthy ♱
+╋━${setv} ${prefix}tiktokkayes ♱
+╋━${setv} ${prefix}tiktokpanrika ♱
+╋━${setv} ${prefix}tiktoknotnot ♱
+╋━${setv} ${prefix}tiktokghea ♱
+╋━${setv} ${prefix}tiktoksantuy ♱
+╋━${setv} ${prefix}tiktokbocil ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -21585,7 +21585,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -21635,7 +21635,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -21684,7 +21684,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -21775,19 +21775,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -21814,22 +21814,22 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stalkermenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *SHIT*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *STALKER* 」
-│${setv} ${prefix}tiktokstalk 🅕
-│${setv} ${prefix}mlstalk 🅕
-│${setv} ${prefix}npmstalk 🅕
-│${setv} ${prefix}ghstalk 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *SHIT*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *STALKER*  
+╋━${setv} ${prefix}tiktokstalk ♱
+╋━${setv} ${prefix}mlstalk ♱
+╋━${setv} ${prefix}npmstalk ♱
+╋━${setv} ${prefix}ghstalk ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -21998,7 +21998,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -22048,7 +22048,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -22097,7 +22097,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -22188,19 +22188,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -22227,37 +22227,37 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'aimenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *REAL*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *OPEN AI* 」
-│${setv} ${prefix}blackboxai 🅕
-│${setv} ${prefix}travel-assistant 🅕
-│${setv} ${prefix}guru-ai 🅕
-│${setv} ${prefix}emi-ai 🅕
-│${setv} ${prefix}claude-ai 🅕
-│${setv} ${prefix}hercai-cartoon 🅕
-│${setv} ${prefix}hercai-animefy 🅕
-│${setv} ${prefix}hercai-lexica 🅕
-│${setv} ${prefix}hercai-prodia 🅕
-│${setv} ${prefix}hercai-simurg 🅕
-│${setv} ${prefix}hercai-raava 🅕
-│${setv} ${prefix}hercai-shonin 🅕
-│${setv} ${prefix}realistic 🅕
-│${setv} ${prefix}3dmodel 🅕
-│${setv} ${prefix}photoleap 🅕
-│${setv} ${prefix}openai 🅕
-│${setv} ${prefix}dalle 🅕
-│${setv} ${prefix}ai 🅕
-│${setv} ${prefix}remini 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *REAL*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *OPEN AI*  
+╋━${setv} ${prefix}blackboxai ♱
+╋━${setv} ${prefix}travel-assistant ♱
+╋━${setv} ${prefix}guru-ai ♱
+╋━${setv} ${prefix}emi-ai ♱
+╋━${setv} ${prefix}claude-ai ♱
+╋━${setv} ${prefix}hercai-cartoon ♱
+╋━${setv} ${prefix}hercai-animefy ♱
+╋━${setv} ${prefix}hercai-lexica ♱
+╋━${setv} ${prefix}hercai-prodia ♱
+╋━${setv} ${prefix}hercai-simurg ♱
+╋━${setv} ${prefix}hercai-raava ♱
+╋━${setv} ${prefix}hercai-shonin ♱
+╋━${setv} ${prefix}realistic ♱
+╋━${setv} ${prefix}3dmodel ♱
+╋━${setv} ${prefix}photoleap ♱
+╋━${setv} ${prefix}openai ♱
+╋━${setv} ${prefix}dalle ♱
+╋━${setv} ${prefix}ai ♱
+╋━${setv} ${prefix}remini ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -22426,7 +22426,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -22476,7 +22476,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -22525,7 +22525,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -22616,19 +22616,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -22655,32 +22655,32 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'gamemenu': {
 let xmenu_oh = `
-╭──「 *TTHE MONSTER* 」
-├${setv} *SHII*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」M
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *GAME MENU* 」
-│${setv} ${prefix}truth 🅕
-│${setv} ${prefix}dare 🅕
-│${setv} ${prefix}suit 🅕
-│${setv} ${prefix}tictactoe 🅕
-│${setv} ${prefix}math 🅕
-│${setv} ${prefix}playbomb 🅕
-│${setv} ${prefix}casino 🅕
-│${setv} ${prefix}rob 🅕
-│${setv} ${prefix}slot 🅕
-│${setv} ${prefix}dice 🅕 
-│${setv} ${prefix} profile 🅕
-│${setv} ${prefix} claim 🅕
-│${setv} ${prefix} tmoney 🅕
-│${setv} ${prefix} tflimit 🅕
-╰──────`
+━♱  *T⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *SHII*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  M
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *GAME MENU*  
+╋━${setv} ${prefix}truth ♱
+╋━${setv} ${prefix}dare ♱
+╋━${setv} ${prefix}suit ♱
+╋━${setv} ${prefix}tictactoe ♱
+╋━${setv} ${prefix}math ♱
+╋━${setv} ${prefix}playbomb ♱
+╋━${setv} ${prefix}casino ♱
+╋━${setv} ${prefix}rob ♱
+╋━${setv} ${prefix}slot ♱
+╋━${setv} ${prefix}dice ♱
+╋━${setv} ${prefix} profile ♱
+╋━${setv} ${prefix} claim ♱
+╋━${setv} ${prefix} tmoney ♱
+╋━${setv} ${prefix} tflimit ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -22849,7 +22849,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -22899,7 +22899,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -22948,7 +22948,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -23039,19 +23039,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -23078,82 +23078,82 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'funmenu': {
 let xmenu_oh = `
-╭──「 *TTHE MONSTER* 」
-├${setv} *WOULD*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *FUN MENU* 」
-│${setv} ${prefix}define 🅕
-│${setv} ${prefix}readmore 🅕
-│${setv} ${prefix}fact 🅕
-│${setv} ${prefix}couple 🅕
-│${setv} ${prefix}soulmate 🅕
-│${setv} ${prefix}stupidcheck 🅕
-│${setv} ${prefix}handsomecheck 🅕
-│${setv} ${prefix}uncleancheck 🅕
-│${setv} ${prefix}hotcheck 🅕
-│${setv} ${prefix}smartcheck 🅕
-│${setv} ${prefix}greatcheck 🅕
-│${setv} ${prefix}evilcheck 🅕
-│${setv} ${prefix}dogcheck 🅕
-│${setv} ${prefix}coolcheck 🅕
-│${setv} ${prefix}waifucheck 🅕
-│${setv} ${prefix}awesomecheck 🅕
-│${setv} ${prefix}gaycheck 🅕
-│${setv} ${prefix}cutecheck 🅕
-│${setv} ${prefix}lesbiancheck 🅕
-│${setv} ${prefix}hornycheck 🅕
-│${setv} ${prefix}prettycheck 🅕
-│${setv} ${prefix}lovelycheck 🅕
-│${setv} ${prefix}uglycheck 🅕
-│${setv} ${prefix}pick 🅕
-│${setv} ${prefix}pickupline 🅕
-│${setv} ${prefix}quotes 🅕
-│${setv} ${prefix}can 🅕
-│${setv} ${prefix}is 🅕
-│${setv} ${prefix}when 🅕
-│${setv} ${prefix}where 🅕
-│${setv} ${prefix}what 🅕
-│${setv} ${prefix}how 🅕
-│${setv} ${prefix}rate 🅕
-│${setv} ${prefix}cry 🅕
-│${setv} ${prefix}kill 🅕
-│${setv} ${prefix}hug 🅕
-│${setv} ${prefix}pat 🅕
-│${setv} ${prefix}lick 🅕 
-│${setv} ${prefix}kiss 🅕
-│${setv} ${prefix}bite 🅕
-│${setv} ${prefix}yeet 🅕
-│${setv} ${prefix}bully 🅕
-│${setv} ${prefix}bonk 🅕
-│${setv} ${prefix}wink 🅕
-│${setv} ${prefix}poke 🅕
-│${setv} ${prefix}nom 🅕
-│${setv} ${prefix}slap 🅕
-│${setv} ${prefix}smile 🅕 
-│${setv} ${prefix}wave 🅕
-│${setv} ${prefix}awoo 🅕
-│${setv} ${prefix}blush 🅕
-│${setv} ${prefix}smug 🅕
-│${setv} ${prefix}glomp 🅕 
-│${setv} ${prefix}happy 🅕
-│${setv} ${prefix}dance 🅕
-│${setv} ${prefix}cringe 🅕
-│${setv} ${prefix}cuddle 🅕
-│${setv} ${prefix}highfive 🅕 
-│${setv} ${prefix}handhold 🅕
-│${setv} ${prefix}spank 🅕
-│${setv} ${prefix}tickle 🅕
-│${setv} ${prefix}feed 🅕
-│${setv} ${prefix}checkme 🅕
-│${setv} ${prefix}sound1 - sound161 🅕
-╰──────`
+━♱  *T⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *WOULD*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *FUN MENU*  
+╋━${setv} ${prefix}define ♱
+╋━${setv} ${prefix}readmore ♱
+╋━${setv} ${prefix}fact ♱
+╋━${setv} ${prefix}couple ♱
+╋━${setv} ${prefix}soulmate ♱
+╋━${setv} ${prefix}stupidcheck ♱
+╋━${setv} ${prefix}handsomecheck ♱
+╋━${setv} ${prefix}uncleancheck ♱
+╋━${setv} ${prefix}hotcheck ♱
+╋━${setv} ${prefix}smartcheck ♱
+╋━${setv} ${prefix}greatcheck ♱
+╋━${setv} ${prefix}evilcheck ♱
+╋━${setv} ${prefix}dogcheck ♱
+╋━${setv} ${prefix}coolcheck ♱
+╋━${setv} ${prefix}waifucheck ♱
+╋━${setv} ${prefix}awesomecheck ♱
+╋━${setv} ${prefix}gaycheck ♱
+╋━${setv} ${prefix}cutecheck ♱
+╋━${setv} ${prefix}lesbiancheck ♱
+╋━${setv} ${prefix}hornycheck ♱
+╋━${setv} ${prefix}prettycheck ♱
+╋━${setv} ${prefix}lovelycheck ♱
+╋━${setv} ${prefix}uglycheck ♱
+╋━${setv} ${prefix}pick ♱
+╋━${setv} ${prefix}pickupline ♱
+╋━${setv} ${prefix}quotes ♱
+╋━${setv} ${prefix}can ♱
+╋━${setv} ${prefix}is ♱
+╋━${setv} ${prefix}when ♱
+╋━${setv} ${prefix}where ♱
+╋━${setv} ${prefix}what ♱
+╋━${setv} ${prefix}how ♱
+╋━${setv} ${prefix}rate ♱
+╋━${setv} ${prefix}cry ♱
+╋━${setv} ${prefix}kill ♱
+╋━${setv} ${prefix}hug ♱
+╋━${setv} ${prefix}pat ♱
+╋━${setv} ${prefix}lick ♱
+╋━${setv} ${prefix}kiss ♱
+╋━${setv} ${prefix}bite ♱
+╋━${setv} ${prefix}yeet ♱
+╋━${setv} ${prefix}bully ♱
+╋━${setv} ${prefix}bonk ♱
+╋━${setv} ${prefix}wink ♱
+╋━${setv} ${prefix}poke ♱
+╋━${setv} ${prefix}nom ♱
+╋━${setv} ${prefix}slap ♱
+╋━${setv} ${prefix}smile ♱
+╋━${setv} ${prefix}wave ♱
+╋━${setv} ${prefix}awoo ♱
+╋━${setv} ${prefix}blush ♱
+╋━${setv} ${prefix}smug ♱
+╋━${setv} ${prefix}glomp ♱
+╋━${setv} ${prefix}happy ♱
+╋━${setv} ${prefix}dance ♱
+╋━${setv} ${prefix}cringe ♱
+╋━${setv} ${prefix}cuddle ♱
+╋━${setv} ${prefix}highfive ♱
+╋━${setv} ${prefix}handhold ♱
+╋━${setv} ${prefix}spank ♱
+╋━${setv} ${prefix}tickle ♱
+╋━${setv} ${prefix}feed ♱
+╋━${setv} ${prefix}checkme ♱
+╋━${setv} ${prefix}sound1 - sound161 ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -23322,7 +23322,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -23372,7 +23372,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -23421,7 +23421,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -23512,19 +23512,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -23551,25 +23551,25 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stickermenu': {
 let xmenu_oh = `
-╭──「 *MIRAN* 」
-├${setv} *YOU*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *STICKERS* 」
-│${setv} ${prefix}goose 🅕
-│${setv} ${prefix}woof 🅕
-│${setv} ${prefix}8ball 🅕
-│${setv} ${prefix}lizard 🅕
-│${setv} ${prefix}meow 🅕
-│${setv} ${prefix}gura 🅕
-│${setv} ${prefix}telestick 🅕
-╰──────`
+━♱  *MIRAN*  
+⨺${setv} *YOU*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *STICKERS*  
+╋━${setv} ${prefix}goose ♱
+╋━${setv} ${prefix}woof ♱
+╋━${setv} ${prefix}8ball ♱
+╋━${setv} ${prefix}lizard ♱
+╋━${setv} ${prefix}meow ♱
+╋━${setv} ${prefix}gura ♱
+╋━${setv} ${prefix}telestick ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -23738,7 +23738,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -23788,7 +23788,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -23837,7 +23837,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -23928,19 +23928,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -23967,153 +23967,153 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'animemenu': {
 let xmenu_oh = `
-╭──「 *FOX* 」
-├${setv} *LEAVE*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *ANIME MENU* 」
-│${setv} ${prefix}stickhandhold 🅕
-│${setv} ${prefix}stickshinobu 🅕
-│${setv} ${prefix}stickcuddle 🅕
-│${setv} ${prefix}stickhighfive 🅕
-│${setv} ${prefix}stickdance 🅕
-│${setv} ${prefix}stickcringe 🅕
-│${setv} ${prefix}stickhappy 🅕
-│${setv} ${prefix}stickglomp 🅕
-│${setv} ${prefix}sticksmug 🅕
-│${setv} ${prefix}stickblush 🅕
-│${setv} ${prefix}stickawoo 🅕
-│${setv} ${prefix}stickwave 🅕
-│${setv} ${prefix}sticksmile 🅕
-│${setv} ${prefix}stickslap 🅕
-│${setv} ${prefix}stickpoke 🅕
-│${setv} ${prefix}stickwink 🅕
-│${setv} ${prefix}stickbonk 🅕
-│${setv} ${prefix}stickbully 🅕
-│${setv} ${prefix}stickyeet 🅕
-│${setv} ${prefix}stickbike 🅕
-│${setv} ${prefix}stickkiss 🅕
-│${setv} ${prefix}sticklick 🅕
-│${setv} ${prefix}stickpat 🅕
-│${setv} ${prefix}stickhug 🅕
-│${setv} ${prefix}stickkill 🅕
-│${setv} ${prefix}stickcry 🅕
-│${setv} ${prefix}stickspank 🅕
-│${setv} ${prefix}sticktickle 🅕
-│${setv} ${prefix}traceanime 🅕
-│${setv} ${prefix}akira 🅕
-│${setv} ${prefix}akiyama 🅕
-│${setv} ${prefix}ana 🅕
-│${setv} ${prefix}asuna 🅕
-│${setv} ${prefix}ayuzawa 🅕
-│${setv} ${prefix}boruto 🅕
-│${setv} ${prefix}chiho 🅕
-│${setv} ${prefix}chitoge 🅕
-│${setv} ${prefix}cosplayloli 🅕
-│${setv} ${prefix}cosplaysagiri 🅕
-│${setv} ${prefix}deidara 🅕
-│${setv} ${prefix}doraemon 🅕
-│${setv} ${prefix}elaina 🅕
-│${setv} ${prefix}emilia 🅕
-│${setv} ${prefix}erza 🅕
-│${setv} ${prefix}gremory 🅕
-│${setv} ${prefix}hestia 🅕
-│${setv} ${prefix}husbu 🅕
-│${setv} ${prefix}inori 🅕
-│${setv} ${prefix}isuzu 🅕
-│${setv} ${prefix}itachi 🅕
-│${setv} ${prefix}itori 🅕
-│${setv} ${prefix}kaga 🅕
-│${setv} ${prefix}kagura 🅕
-│${setv} ${prefix}kakasih 🅕
-│${setv} ${prefix}kaori 🅕
-│${setv} ${prefix}keneki 🅕
-│${setv} ${prefix}kotori 🅕
-│${setv} ${prefix}kurumi 🅕
-│${setv} ${prefix}loli 🅕
-│${setv} ${prefix}loli2 🅕
-│${setv} ${prefix}madara 🅕
-│${setv} ${prefix}megumin 🅕
-│${setv} ${prefix}mikasa 🅕
-│${setv} ${prefix}mikey 🅕
-│${setv} ${prefix}miku 🅕
-│${setv} ${prefix}minato 🅕
-│${setv} ${prefix}naruto 🅕
-│${setv} ${prefix}neko 🅕
-│${setv} ${prefix}nekonime 🅕
-│${setv} ${prefix}nezuko 🅕
-│${setv} ${prefix}onepiece 🅕
-│${setv} ${prefix}pokemon 🅕
-│${setv} ${prefix}randomnime 🅕
-│${setv} ${prefix}randomnime2 🅕
-│${setv} ${prefix}rize 🅕
-│${setv} ${prefix}sagiri 🅕
-│${setv} ${prefix}sakura 🅕
-│${setv} ${prefix}sasuke 🅕
-│${setv} ${prefix}shina 🅕
-│${setv} ${prefix}shinka 🅕
-│${setv} ${prefix}shinomiya 🅕
-│${setv} ${prefix}shizuka 🅕
-│${setv} ${prefix}shota 🅕
-│${setv} ${prefix}tejina 🅕
-│${setv} ${prefix}toukachan 🅕
-│${setv} ${prefix}tsunade 🅕
-│${setv} ${prefix}waifu 🅕
-│${setv} ${prefix}waifu2 🅕
-│${setv} ${prefix}animewall 🅕
-│${setv} ${prefix}yotsuba 🅕
-│${setv} ${prefix}yuki 🅕
-│${setv} ${prefix}yulibocil 🅕
-│${setv} ${prefix}yumeko 🅕
-│${setv} ${prefix}8ball 🅕
-│${setv} ${prefix}animeawoo 🅕
-│${setv} ${prefix}animemegumin 🅕
-│${setv} ${prefix}animeshinobu 🅕
-│${setv} ${prefix}animehandhold 🅕
-│${setv} ${prefix}animehighfive 🅕
-│${setv} ${prefix}animecringe 🅕
-│${setv} ${prefix}animedance 🅕
-│${setv} ${prefix}animehappy 🅕
-│${setv} ${prefix}animeglomp 🅕
-│${setv} ${prefix}animeblush 🅕
-│${setv} ${prefix}animesmug 🅕
-│${setv} ${prefix}animewave 🅕
-│${setv} ${prefix}animesmille 🅕
-│${setv} ${prefix}animepoke 🅕
-│${setv} ${prefix}animewink 🅕
-│${setv} ${prefix}animebonk 🅕
-│${setv} ${prefix}animebully 🅕
-│${setv} ${prefix}animeyeet 🅕
-│${setv} ${prefix}animebite 🅕
-│${setv} ${prefix}animelick 🅕
-│${setv} ${prefix}animekill 🅕
-│${setv} ${prefix}animecry 🅕
-│${setv} ${prefix}animewlp 🅕
-│${setv} ${prefix}animekiss 🅕
-│${setv} ${prefix}animehug 🅕
-│${setv} ${prefix}animeneko 🅕
-│${setv} ${prefix}animepat 🅕
-│${setv} ${prefix}animeslap 🅕
-│${setv} ${prefix}animecuddle 🅕
-│${setv} ${prefix}animewaifu 🅕
-│${setv} ${prefix}animenom 🅕
-│${setv} ${prefix}animefoxgirl 🅕
-│${setv} ${prefix}animegecg 🅕
-│${setv} ${prefix}animetickle 🅕
-│${setv} ${prefix}animefeed 🅕
-│${setv} ${prefix}animeavatar 🅕
-│${setv} ${prefix}anime 🅕
-│${setv} ${prefix}avatar 🅕
-│${setv} ${prefix}shinobu 🅕
-│${setv} ${prefix}fox_girl 🅕
-│${setv} ${prefix}gecg 🅕
-╰──────`
+━♱  *FOX*  
+⨺${setv} *LEAVE*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *ANIME MENU*  
+╋━${setv} ${prefix}stickhandhold ♱
+╋━${setv} ${prefix}stickshinobu ♱
+╋━${setv} ${prefix}stickcuddle ♱
+╋━${setv} ${prefix}stickhighfive ♱
+╋━${setv} ${prefix}stickdance ♱
+╋━${setv} ${prefix}stickcringe ♱
+╋━${setv} ${prefix}stickhappy ♱
+╋━${setv} ${prefix}stickglomp ♱
+╋━${setv} ${prefix}sticksmug ♱
+╋━${setv} ${prefix}stickblush ♱
+╋━${setv} ${prefix}stickawoo ♱
+╋━${setv} ${prefix}stickwave ♱
+╋━${setv} ${prefix}sticksmile ♱
+╋━${setv} ${prefix}stickslap ♱
+╋━${setv} ${prefix}stickpoke ♱
+╋━${setv} ${prefix}stickwink ♱
+╋━${setv} ${prefix}stickbonk ♱
+╋━${setv} ${prefix}stickbully ♱
+╋━${setv} ${prefix}stickyeet ♱
+╋━${setv} ${prefix}stickbike ♱
+╋━${setv} ${prefix}stickkiss ♱
+╋━${setv} ${prefix}sticklick ♱
+╋━${setv} ${prefix}stickpat ♱
+╋━${setv} ${prefix}stickhug ♱
+╋━${setv} ${prefix}stickkill ♱
+╋━${setv} ${prefix}stickcry ♱
+╋━${setv} ${prefix}stickspank ♱
+╋━${setv} ${prefix}sticktickle ♱
+╋━${setv} ${prefix}traceanime ♱
+╋━${setv} ${prefix}akira ♱
+╋━${setv} ${prefix}akiyama ♱
+╋━${setv} ${prefix}ana ♱
+╋━${setv} ${prefix}asuna ♱
+╋━${setv} ${prefix}ayuzawa ♱
+╋━${setv} ${prefix}boruto ♱
+╋━${setv} ${prefix}chiho ♱
+╋━${setv} ${prefix}chitoge ♱
+╋━${setv} ${prefix}cosplayloli ♱
+╋━${setv} ${prefix}cosplaysagiri ♱
+╋━${setv} ${prefix}deidara ♱
+╋━${setv} ${prefix}doraemon ♱
+╋━${setv} ${prefix}elaina ♱
+╋━${setv} ${prefix}emilia ♱
+╋━${setv} ${prefix}erza ♱
+╋━${setv} ${prefix}gremory ♱
+╋━${setv} ${prefix}hestia ♱
+╋━${setv} ${prefix}husbu ♱
+╋━${setv} ${prefix}inori ♱
+╋━${setv} ${prefix}isuzu ♱
+╋━${setv} ${prefix}itachi ♱
+╋━${setv} ${prefix}itori ♱
+╋━${setv} ${prefix}kaga ♱
+╋━${setv} ${prefix}kagura ♱
+╋━${setv} ${prefix}kakasih ♱
+╋━${setv} ${prefix}kaori ♱
+╋━${setv} ${prefix}keneki ♱
+╋━${setv} ${prefix}kotori ♱
+╋━${setv} ${prefix}kurumi ♱
+╋━${setv} ${prefix}loli ♱
+╋━${setv} ${prefix}loli2 ♱
+╋━${setv} ${prefix}madara ♱
+╋━${setv} ${prefix}megumin ♱
+╋━${setv} ${prefix}mikasa ♱
+╋━${setv} ${prefix}mikey ♱
+╋━${setv} ${prefix}miku ♱
+╋━${setv} ${prefix}minato ♱
+╋━${setv} ${prefix}naruto ♱
+╋━${setv} ${prefix}neko ♱
+╋━${setv} ${prefix}nekonime ♱
+╋━${setv} ${prefix}nezuko ♱
+╋━${setv} ${prefix}onepiece ♱
+╋━${setv} ${prefix}pokemon ♱
+╋━${setv} ${prefix}randomnime ♱
+╋━${setv} ${prefix}randomnime2 ♱
+╋━${setv} ${prefix}rize ♱
+╋━${setv} ${prefix}sagiri ♱
+╋━${setv} ${prefix}sakura ♱
+╋━${setv} ${prefix}sasuke ♱
+╋━${setv} ${prefix}shina ♱
+╋━${setv} ${prefix}shinka ♱
+╋━${setv} ${prefix}shinomiya ♱
+╋━${setv} ${prefix}shizuka ♱
+╋━${setv} ${prefix}shota ♱
+╋━${setv} ${prefix}tejina ♱
+╋━${setv} ${prefix}toukachan ♱
+╋━${setv} ${prefix}tsunade ♱
+╋━${setv} ${prefix}waifu ♱
+╋━${setv} ${prefix}waifu2 ♱
+╋━${setv} ${prefix}animewall ♱
+╋━${setv} ${prefix}yotsuba ♱
+╋━${setv} ${prefix}yuki ♱
+╋━${setv} ${prefix}yulibocil ♱
+╋━${setv} ${prefix}yumeko ♱
+╋━${setv} ${prefix}8ball ♱
+╋━${setv} ${prefix}animeawoo ♱
+╋━${setv} ${prefix}animemegumin ♱
+╋━${setv} ${prefix}animeshinobu ♱
+╋━${setv} ${prefix}animehandhold ♱
+╋━${setv} ${prefix}animehighfive ♱
+╋━${setv} ${prefix}animecringe ♱
+╋━${setv} ${prefix}animedance ♱
+╋━${setv} ${prefix}animehappy ♱
+╋━${setv} ${prefix}animeglomp ♱
+╋━${setv} ${prefix}animeblush ♱
+╋━${setv} ${prefix}animesmug ♱
+╋━${setv} ${prefix}animewave ♱
+╋━${setv} ${prefix}animesmille ♱
+╋━${setv} ${prefix}animepoke ♱
+╋━${setv} ${prefix}animewink ♱
+╋━${setv} ${prefix}animebonk ♱
+╋━${setv} ${prefix}animebully ♱
+╋━${setv} ${prefix}animeyeet ♱
+╋━${setv} ${prefix}animebite ♱
+╋━${setv} ${prefix}animelick ♱
+╋━${setv} ${prefix}animekill ♱
+╋━${setv} ${prefix}animecry ♱
+╋━${setv} ${prefix}animewlp ♱
+╋━${setv} ${prefix}animekiss ♱
+╋━${setv} ${prefix}animehug ♱
+╋━${setv} ${prefix}animeneko ♱
+╋━${setv} ${prefix}animepat ♱
+╋━${setv} ${prefix}animeslap ♱
+╋━${setv} ${prefix}animecuddle ♱
+╋━${setv} ${prefix}animewaifu ♱
+╋━${setv} ${prefix}animenom ♱
+╋━${setv} ${prefix}animefoxgirl ♱
+╋━${setv} ${prefix}animegecg ♱
+╋━${setv} ${prefix}animetickle ♱
+╋━${setv} ${prefix}animefeed ♱
+╋━${setv} ${prefix}animeavatar ♱
+╋━${setv} ${prefix}anime ♱
+╋━${setv} ${prefix}avatar ♱
+╋━${setv} ${prefix}shinobu ♱
+╋━${setv} ${prefix}fox_girl ♱
+╋━${setv} ${prefix}gecg ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -24282,7 +24282,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -24332,7 +24332,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -24381,7 +24381,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -24472,19 +24472,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 		      }
            ],
           }),
@@ -24511,32 +24511,32 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'nsfwmenu': {
 let xmenu_oh = `
-╭──「 *THE ONE* 」
-├${setv} *ME*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *ANIME NSFW* 」
-│${setv} ${prefix}hentai 🅕
-│${setv} ${prefix}gifblowjob 🅕
-│${setv} ${prefix}hentaivid 🅕
-│${setv} ${prefix}hneko 🅕
-│${setv} ${prefix}nwaifu 🅕
-│${setv} ${prefix}animespank 🅕
-│${setv} ${prefix}trap 🅕
-│${setv} ${prefix}blowjob 🅕
-│${setv} ${prefix}cuckold 🅕
-│${setv} ${prefix}milf 🅕
-│${setv} ${prefix}eba 🅕
-│${setv} ${prefix}pussy 🅕
-│${setv} ${prefix}yuri 🅕
-│${setv} ${prefix}zettai 🅕
-╰──────`
+━♱  *THE ONE*  
+⨺${setv} *ME*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *ANIME NSFW*  
+╋━${setv} ${prefix}hentai ♱
+╋━${setv} ${prefix}gifblowjob ♱
+╋━${setv} ${prefix}hentaivid ♱
+╋━${setv} ${prefix}hneko ♱
+╋━${setv} ${prefix}nwaifu ♱
+╋━${setv} ${prefix}animespank ♱
+╋━${setv} ${prefix}trap ♱
+╋━${setv} ${prefix}blowjob ♱
+╋━${setv} ${prefix}cuckold ♱
+╋━${setv} ${prefix}milf ♱
+╋━${setv} ${prefix}eba ♱
+╋━${setv} ${prefix}pussy ♱
+╋━${setv} ${prefix}yuri ♱
+╋━${setv} ${prefix}zettai ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -24705,7 +24705,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -24755,7 +24755,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -24804,7 +24804,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -24895,19 +24895,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -24934,26 +24934,26 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'databasemenu': {
 let xmenu_oh = `
-╭──「 *MIRAN* 」
-├${setv} *THE*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *DATABASE* 」
-│${setv} ${prefix}setcmd 🅞
-│${setv} ${prefix}delcmd 🅞
-│${setv} ${prefix}listcmd 🅕
-│${setv} ${prefix}lockcmd 🅞
-│${setv} ${prefix}addmsg 🅞
-│${setv} ${prefix}delmsg 🅞
-│${setv} ${prefix}getmsg 🅕
-│${setv} ${prefix}listmsg 🅕
-╰──────`
+━♱  *MIRAN*  
+⨺${setv} *THE*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *DATABASE*  
+╋━${setv} ${prefix}setcmd 𓇻‎
+╋━${setv} ${prefix}delcmd 𓇻‎
+╋━${setv} ${prefix}listcmd ♱
+╋━${setv} ${prefix}lockcmd 𓇻‎
+╋━${setv} ${prefix}addmsg 𓇻‎
+╋━${setv} ${prefix}delmsg 𓇻‎
+╋━${setv} ${prefix}getmsg ♱
+╋━${setv} ${prefix}listmsg ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -25122,7 +25122,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -25172,7 +25172,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -25221,7 +25221,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -25312,19 +25312,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -25351,23 +25351,23 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'storemenu': {
 let xmenu_oh = `
-╭──「 *TTHE MONSTER* 」
-├${setv} *IN*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} 🥰* 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *STORE 🛍️* 」
-│${setv} ${prefix}list 🅕
-│${setv} ${prefix}store 🅕
-│${setv} ${prefix}shop 🅕
-│${setv} ${prefix}addlist 🅞
-│${setv} ${prefix}dellist 🅞
-╰──────`
+━♱  *T⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *IN*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} 💣* 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *STORE 🛍️*  
+╋━${setv} ${prefix}list ♱
+╋━${setv} ${prefix}store ♱
+╋━${setv} ${prefix}shop ♱
+╋━${setv} ${prefix}addlist 𓇻‎
+╋━${setv} ${prefix}dellist 𓇻‎
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -25536,7 +25536,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
   "name": "quick_reply",
@@ -25590,7 +25590,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -25639,7 +25639,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -25730,19 +25730,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -25769,21 +25769,21 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'religionmenu': {
 let xmenu_oh = `
-╭──「 *THE MONSTER* 」
-├${setv} *FRONT*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *RELIGION* 」
-│${setv} ${prefix}bible 🅕
-│${setv} ${prefix}quran 🅕
-│${setv} ${prefix}gita 🅕
-╰──────`
+━♱  *⨺⃝𝚁𝙾𝚂𝙴♱*  
+⨺${setv} *FRONT*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *RELIGION*  
+╋━${setv} ${prefix}bible ♱
+╋━${setv} ${prefix}quran ♱
+╋━${setv} ${prefix}gita ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -25952,7 +25952,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               } 
            ],
           })
@@ -26002,7 +26002,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -26051,7 +26051,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -26142,19 +26142,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -26181,27 +26181,27 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'bugmenu': {
 let xmenu_oh = `
-╭──「 *THE FOX* 」
-├${setv} *OF*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} * 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬────
-╭─┴「 *BUG & WAR* 」
-│${setv} ${prefix}xandroid 🅞
-│${setv} ${prefix}xandroid2 🅞
-│${setv} ${prefix}xios 🅞
-│${setv} ${prefix}xios2 🅞
-│${setv} ${prefix}systemuicrash 🅞
-│${setv} ${prefix}xsysui 🅞
-│${setv} ${prefix}🙂 🅞
-│${setv} ${prefix}ioskill 🅞
-│${setv} ${prefix}onekill 🅞
-╰──────`
+━♱  *THE FOX*  
+⨺${setv} *OF*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} * 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱
+╋━♱  *BUG & WAR*  
+╋━${setv} ${prefix}xandroid 𓇻‎
+╋━${setv} ${prefix}xandroid2 𓇻‎
+╋━${setv} ${prefix}xios 𓇻‎
+╋━${setv} ${prefix}xios2 𓇻‎
+╋━${setv} ${prefix}systemuicrash 𓇻‎
+╋━${setv} ${prefix}xsysui 𓇻‎
+╋━${setv} ${prefix}🙂 𓇻‎
+╋━${setv} ${prefix}ioskill 𓇻‎
+╋━${setv} ${prefix}onekill 𓇻‎
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -26370,7 +26370,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -26420,7 +26420,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -26469,7 +26469,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -26560,19 +26560,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -26599,34 +26599,34 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'othermenu': {
 let xmenu_oh = `
-╭──「 *NNATHAN* 」
-├${setv} *THE*
-├${setv} *${m.pushName}* 
-├${setv} *${xeonytimewisher} 🥰* 
-╰─┬──── ${readmore}
-╭─┴「 *GUIDE* 」
-├${setv} *🅞 = For Owner* 
-├${setv} *🅕 = For Free User*
-├${setv} *🅟 = For Premium User*
-╰─┬──── 
-╭─┴「 *OTHER MENU* 」
-│${setv} ${prefix}update 🅕
-│${setv} ${prefix}ping 🅕
-│${setv} ${prefix}menu 🅕
-│${setv} ${prefix}myip 🅕
-│${setv} ${prefix}repo 🅕
-│${setv} ${prefix}reportbug 🅕
-│${setv} ${prefix}idgroup 🅕
-│${setv} ${prefix}owner 🅕
-│${setv} ${prefix}rentbot 🅕
-│${setv} ${prefix}donate 🅕
-│${setv} ${prefix}runtime 🅕
-│${setv} ${prefix}confess 🅕
-│${setv} ${prefix}react 🅕
-│${setv} ${prefix}q 🅕
-│${setv} ${prefix}inspect 🅕
-│${setv} ${prefix}tagme 🅕
-╰──────`
+━♱  *NNATHAN*  
+⨺${setv} *THE*
+⨺${setv} *${m.pushName}* 
+⨺${setv} *${xeonytimewisher} 💣* 
+╋━──────♱ ${readmore}
+╋━♱  *GUIDE*  
+⨺${setv} *𓇻‎ = For Owner* 
+⨺${setv} *♱= For Free User*
+⨺${setv} *𓃦 = For Premium User*
+╋━──────♱ 
+╋━♱  *OTHER MENU*
+╋━${setv} ${prefix}update ♱
+╋━${setv} ${prefix}ping ♱
+╋━${setv} ${prefix}menu ♱
+╋━${setv} ${prefix}myip ♱
+╋━${setv} ${prefix}repo ♱
+╋━${setv} ${prefix}reportbug ♱
+╋━${setv} ${prefix}idgroup ♱
+╋━${setv} ${prefix}owner ♱
+╋━${setv} ${prefix}rentbot ♱
+╋━${setv} ${prefix}donate ♱
+╋━${setv} ${prefix}runtime ♱
+╋━${setv} ${prefix}confess ♱
+╋━${setv} ${prefix}react ♱
+╋━${setv} ${prefix}q ♱
+╋━${setv} ${prefix}inspect ♱
+╋━${setv} ${prefix}tagme ♱
+╋━──────♱`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -26795,7 +26795,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
            ],
           })
@@ -26845,7 +26845,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
               }
                                   ],
                 }),
@@ -26894,7 +26894,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               {
                 "name": "single_select",
                 "buttonParamsJson": 
-`{"title":"GLOBAL MENU",
+`{"title":"⨺⃝𝚁𝙾𝚂𝙴♱",
 "sections":[{"title":"${botname}",
 "rows":[{"header":"🧲 ALL MENU 🎊",
 "title":"click to display",
@@ -26985,19 +26985,19 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/@GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"YouTube 📶\",\"url\":\"https://youtube.com/kitsubfox69\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Telegram 🌠\",\"url\":\"https://t.me/GlobalTechInc\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": ""{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Luxxy4\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/GlobalTechInfo\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"GitHub ID 🎩\",\"url\":\"https://github.com/Zeus30007\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/JTDVwBF6GiV5aEoZkcWNLQ\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),

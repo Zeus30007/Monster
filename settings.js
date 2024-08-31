@@ -9,15 +9,15 @@ global.socialm = "GitHub: Zeus30007" //ur github or insta name
 global.location = "Indonesia, Papua" //ur location
 
 //new
-global.botname = '𝚃𝙷𝙴 𝙼𝙾𝙽𝚂𝚃𝙴𝚁' //ur bot name
+global.botname = '⨺⃝𝚁𝙾𝚂𝙴𓃦' //ur bot name
 global.ownernumber = ['6283891139988'] //ur owner number, dont add more than one
-global.ownername = '©MIRAN FOX' //ur owner name
+global.ownername = '⨺⃝𝙼𝙸𝚁𝙰𝙽 𝙵𝙾𝚇𓃦' //ur owner name
 global.websitex = ""
 global.wagc = "https://chat.whatsapp.com/JVOl5GMwn1j4CUjuqvE0mG"
 global.themeemoji = '💣'
 global.wm = "Xeon Bot Inc."
 global.botscript = 'https://github.com/Zeus30007' //script link
-global.packname = "THE MOSTER I'v BECOME"
+global.packname = "𓇻𝕹𝖆𝖙𝖍𝖆𝖓"
 global.author = "⨺⃝𝙼𝙸𝚁𝙰𝙽 𝙵𝙾𝚇𓃦"
 global.creator = "6283891139988@s.whatsapp.net"
 global.xprefix = '.'
@@ -25,7 +25,7 @@ global.premium = ["6283891139988"] // Premium User
 
 //channel id
 global.xchannel = {
-	jid: '12036331909872999@newsletter'
+	jid: '1203633190987299@newsletter'
 	}
 
 //bot sett
